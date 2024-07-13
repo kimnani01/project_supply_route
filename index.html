@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="품질 좋은 다양한 브랜드들과 함께 좋은 경험을 해보세요.">
+    <meta name="keywords" content="서플라이루트, 편집샵, 쇼핑몰, 남자편집샵">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>서플라이루트</title>
+    <!-- 파비콘 -->
+    <!-- 웹폰트 -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- css, js -->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <script src="./scripts/scripts.js" defer></script>
+</head>
+<body>
+    <!-- top btn -->
+    <div class="top_btn"><a href="#"><img src="./images/top_btn.svg" alt="위로가기"></a></div>
+    <!-- 최상단 회원가입 쿠폰 안내 -->
+    <div class="join_event"><p>회원가입 시 10% 할인 쿠폰 지급</p></div>
+    <div class="header_bg">
+        <header>
+            <h1><a href="#"><img src="./images/logo.png" alt="서플라이루트"></a></h1>
+            <div class="menu_user">
+                <nav>
+                    <ul class="gnb">
+                        <li><a href="#"><img src="./images/menu.svg" alt="카테고리"></a></li>
+                        <li><a href="#">BRAND</a></li>
+                        <li><a href="#">BEST</a></li>
+                        <li><a href="#">NEW</a></li>
+                        <li><a href="#">SALE</a></li>
+                        <li><a href="#">STYLIST</a></li>
+                        <li><a href="#">CURATION</a></li>
+                        <li><a href="#">매장안내</a></li>
+                    </ul>
+                </nav>
+                <div class="search_user">
+                    <div class="search_wrap">
+                        <input type="text" name="search">
+                        <button type="button" id="search_btn"><img src="./images/search.svg" alt="검색"></button>
+                    </div>
+                    <a href="#"><img src="./images/cart.svg" alt="장바구니"></a>
+                    <a href="#"><img src="./images/person.svg" alt="마이페이지"></a>
+                </div>
+            </div>
+        </header>
+    </div>
+    <main>
+        <!-- visual 배너 -->
+        <div class="swiper visual">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="#"><img src="./images/visual001.jpg" alt="멋lab이 소개하는 서플라이루트 이야기"></a></div>
+                <div class="swiper-slide"><a href="#"><img src="./images/visual002.jpg" alt="서플라이루트가 추천하는 summer items"></a></div>
+                <div class="swiper-slide"><a href="#"><img src="./images/visual003.jpg" alt="season off 24SS up to 80% sale"></a></div>
+                <div class="swiper-slide"><a href="#"><img src="./images/visual004.jpg" alt="가치있는 선택 서플라이루트"></a></div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <!-- 카테고리 -->
+        <div class="category">
+            <a href="#" id="clothes"><span>CLOTHES</span><img src="./images/clothes.jpg" alt=""></a>
+            <a href="#" id="acc"><span>STUFF & ACC</span><img src="./images/acc.jpg" alt=""></a>
+            <a href="#" id="shoes"><span>SHOSE</span><img src="./images/shoes.jpg" alt=""></a>
+            <a href="#" id="bag"><span>BAG</span><img src="./images/bag.jpg" alt=""></a>
+            <a href="#" id="watch"><span>WATCH</span><img src="./images/watch.jpg" alt=""></a>
+            <a href="#" id="life"><span>LIFE</span><img src="./images/life.jpg" alt=""></a>
+        </div>
+        <!-- best -->
+        <section class="best_wrap">
+            <div class="title_more">
+                <h2>BEST</h2>
+                <a href="#"><img src="./images/more_btn.png" alt="더보기"></a>
+            </div>
+            <ol class="item">
+                <li>
+                    <a href="#">
+                        <p>1</p>
+                        <div class="item_info">
+                            <p class="brand">건지울른스</p>
+                            <p class="itme_name"></p>
+                            <p class="price"></p>
+                        </div>
+                    </a>
+                </li>
+            </ol>
+        </section>
+    </main>
+</body>
+</html>

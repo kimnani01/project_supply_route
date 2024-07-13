@@ -1,0 +1,39 @@
+.join_event {background: #000;}
+.join_event p {
+    color: #fff; text-align: center;
+    font-weight: 600; line-height: 43px;
+}
+/* main */
+main {}
+/* visual 배너 */
+main .visual {}
+main .visual .swiper-wrapper {}
+main .visual .swiper-wrapper .swiper-slide {}
+main .visual .swiper-wrapper .swiper-slide a {}
+main .visual .swiper-wrapper .swiper-slide a img {width: 100%;}
+main .visual div[class^=swiper-button]{color: #fff;}
+/* 카테고리 */
+.category {
+    max-width: 1500px; margin: 150px auto;
+    display: grid;
+    grid-template-areas: 
+    'clothes clothes bag watch'
+    'acc shoes bag life';
+    grid-gap: 20px;
+}
+.category a {
+    color: #fff; 
+    position: relative;
+}
+.category #clothes {grid-area: clothes;}
+.category #acc {grid-area: acc;}
+.category #shoes {grid-area: shoes;}
+.category #bag {grid-area: bag;}
+.category #shose {grid-area: shoes;}
+.category #watch {grid-area: watch;}
+.category #life {grid-area: life;}
+.category a span {
+    position: absolute; left: 15px; bottom: 15px;
+    font-weight: 700; font-size: 2.25rem;
+}
+.category a img {width: 100%;}

@@ -1,0 +1,53 @@
+/* top btn, .header_bg header,footer 공통 css */
+.top_btn {
+    position: fixed; bottom: 50px; right: 50px;
+    z-index: 999;
+}
+.top_btn a {}
+.top_btn a img {}
+/* header */
+.header_bg {background-color: #fff;}
+.header_bg header {
+    max-width: 1500px;
+    margin: 15px auto;
+}
+.header_bg header h1 {
+    margin-bottom: 30px;
+}
+.header_bg header h1 a {}
+.header_bg header h1 a img {}
+.header_bg header h1 a img {}
+.header_bg header .menu_user {
+    display: flex; 
+    justify-content: space-between; align-items: center;
+}
+.header_bg header .menu_user nav {}
+.header_bg header .menu_user nav .gnb {
+    display: flex; align-items: center;
+}
+.header_bg header .menu_user nav .gnb li {
+    margin-right: 50px;
+}
+.header_bg header .menu_user nav .gnb li:last-child {margin: 0;}
+.header_bg header .menu_user nav .gnb li a {
+    font-weight: 500;
+}
+.header_bg header .menu_user nav .gnb li a img {}
+.header_bg header .menu_user .search_user {
+    display: flex;
+    align-items: center;
+}
+.header_bg header .menu_user .search_user .search_wrap {
+    border-bottom: 1px solid #000;
+    display: flex; justify-content: space-between; 
+    width: 200px;
+}
+.header_bg header .menu_user .search_user .search_wrap input {
+    border: 0; outline: 0;
+}
+.header_bg header .menu_user .search_user .search_wrap #search_btn {
+    background: none; border: 0;
+}
+.header_bg header .menu_user .search_user .search_wrap #search_btn img {}
+.header_bg header .menu_user .search_user a {margin-left: 10px;}
+.header_bg header .menu_user .search_user a img {}
