@@ -36,4 +36,4 @@ main .visual div[class^=swiper-button]{color: #fff;}
     position: absolute; left: 15px; bottom: 15px;
     font-weight: 700; font-size: 2.25rem;
 }
-.category a img {width: 100%;}
+.category a img {width: 100%; border-radius: 10px;}
