@@ -8,12 +8,12 @@
     <title>서플라이루트</title>
     <!-- 파비콘 -->
     <!-- 웹폰트 -->
-    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- swiper -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- css, js -->
     <link rel="stylesheet" href="./styles/reset.css">
@@ -78,94 +78,233 @@
         <section class="best_wrap">
             <div class="title_more">
                 <h2>BEST</h2>
-                <a href="#"><img src="./images/more_btn.png" alt="더보기"></a>
+                <a href="#" class="more_btn"><img src="./images/more_btn.png" alt="더보기"></a>
             </div>
-            <div class="left">
-                <a href="#">
-                    <p>1</p>
-                    <p><img src="./images/best001.jpg" alt=""></p>
-                    <div class="item_info">
-                        <span class="brand">건지울른스</span>
-                        <em class="item_name">코튼 반팔 크루넥 니트 - 오렌지</em>
-                        <span class="price">98,000</span>
-                    </div>
-                </a>
-            </div>
-            <div class="right">
-                <a href="#">
-                    <p>2</p>
-                    <p><img src="./images/best002.jpg" alt=""></p>
-                    <div class="item_info">
-                        <div class="brand_item">
-                            <p class="brand">건지울른스</p>
-                            <p class="item_name">코튼 반팔 카라 니트 - 네이비</p>
+            <div class="item_wrap">
+                <div class="left">
+                    <a href="#">
+                        <p class="num">1</p>
+                        <p class="photo"><img src="./images/best001.jpg" alt=""></p>
+                        <div class="item_info">
+                            <span class="brand">건지울른스</span>
+                            <em class="item_name">코튼 반팔 크루넥 니트 - 오렌지</em>
+                            <span class="price">98,000</span>
                         </div>
-                        <p class="price">98,000</p>
-                    </div>
-                </a>
-                <a href="#">
-                    <p>3</p>
-                    <p><img src="./images/best003.jpg" alt=""></p>
-                    <div class="item_info">
-                        <div class="brand_item">
-                            <p class="brand">맥포스</p>
-                            <p class="item_name">알바트로스 EDC 3웨이백 - 포리지</p>
+                    </a>
+                </div>
+                <div class="right">
+                    <a href="#">
+                        <div class="num_photo">
+                            <p class="num">2</p>
+                            <p class="photo"><img src="./images/best002.jpg" alt=""></p>
                         </div>
-                        <div class="price_wrap">
-                            <p class="original_price"><del>328,000</del></p>
-                            <div class="sale_price">
-                                <p class="sale">15%</p>
-                                <p class="price">278,800</p>
+                        <div class="item_info">
+                            <div class="brand_item">
+                                <p class="brand">건지울른스</p>
+                                <p class="item_name">코튼 반팔 카라 니트 - 네이비</p>
+                            </div>
+                            <div class="price_wrap">
+                                <!-- 할인 전 가격 자리 -->
+                                <div class="sale_price">
+                                    <!-- 세일가격 자리 -->
+                                    <p class="total_price">98,000</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-                <a href="#">
-                    <p>4</p>
-                    <p><img src="./images/best004.jpg" alt=""></p>
-                    <div class="item_info">
-                        <div class="brand_item">
-                            <p class="brand">맥포스</p>
-                            <p class="item_name">슈퍼팔콘 백팩 - 올리브</p>
+                    </a>
+                    <a href="#">
+                        <div class="num_photo">
+                            <p class="num">3</p>
+                            <p class="photo"><img src="./images/best003.jpg" alt=""></p>
                         </div>
-                        <div class="price_wrap">
-                            <p class="original_price"><del>328,000</del></p>
-                            <div class="sale_price">
-                                <p class="sale">15%</p>
-                                <p class="price">278,800</p>
+                        <div class="item_info">
+                            <div class="brand_item">
+                                <p class="brand">맥포스</p>
+                                <p class="item_name">알바트로스 EDC 3웨이백 - 포리지</p>
+                            </div>
+                            <div class="price_wrap">
+                                <p class="original_price"><del>328,000</del></p>
+                                <div class="sale_price">
+                                    <p class="sale">15%</p>
+                                    <p class="total_price">278,800</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-                <a href="#">
-                    <p>5</p>
-                    <p><img src="./images/best005.jpg" alt=""></p>
-                    <div class="item_info">
-                        <div class="brand_item">
-                            <p class="brand">블루드쇼프</p>
-                            <p class="item_name">바자 토트백 - 누아르 블랙</p>
+                    </a>
+                    <a href="#">
+                        <div class="num_photo">
+                            <p class="num">4</p>
+                            <p class="photo"><img src="./images/best004.jpg" alt=""></p>
                         </div>
-                        <div class="price_wrap">
-                            <p class="original_price"><del>388,000</del></p>
-                            <div class="sale_price">
-                                <p class="sale">20%</p>
-                                <p class="price">310,400</p>
+                        <div class="item_info">
+                            <div class="brand_item">
+                                <p class="brand">맥포스</p>
+                                <p class="item_name">슈퍼팔콘 백팩 - 올리브</p>
+                            </div>
+                            <div class="price_wrap">
+                                <p class="original_price"><del>328,000</del></p>
+                                <div class="sale_price">
+                                    <p class="sale">15%</p>
+                                    <p class="total_price">278,800</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
+                    <a href="#">
+                        <p class="num_photo">
+                            <div class="num_photo">
+                                <p class="num">5</p>
+                                <p class="photo"><img src="./images/best005.jpg" alt=""></p>
+                            </div>
+                        </p>
+                        <div class="item_info">
+                            <div class="brand_item">
+                                <p class="brand">블루드쇼프</p>
+                                <p class="item_name">바자 토트백 - 누아르 블랙</p>
+                            </div>
+                            <div class="price_wrap">
+                                <p class="original_price"><del>388,000</del></p>
+                                <div class="sale_price">
+                                    <p class="sale">20%</p>
+                                    <p class="total_price">310,400</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
             </div>
         </section>
         <!-- new -->
         <section class="new_wrap">
             <div class="title_more">
                 <h2>NEW</h2>
-                <a href="#"><img src="./images/more_btn.png" alt="더보기"></a>
-                <div class="item_wrap">
-
+                <a href="#" class="more_btn"><img src="./images/more_btn.png" alt="더보기"></a>
+            </div>
+            <div class="item_wrap">
+                <div class="left">
+                    <a href="#">
+                        <p class="photo"><img src="./images/new001.jpg" alt=""></p>
+                        <div class="item_info">
+                            <div class="brand_item">
+                                <p class="brand">굿온</p>
+                                <p class="item_name">피그먼트 다잉 헤비코튼 포켓 긴팔 티셔츠 컬렉션</p>
+                            </div>
+                            <p class="total_price">138,000</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <p class="photo"><img src="./images/new002.jpg" alt=""></p>
+                        <div class="item_info">
+                            <div class="brand_item">
+                                <p class="brand">굿온</p>
+                                <p class="item_name">피그먼트 다잉 헤비코튼 볼캡 컬렉션</p>
+                            </div>
+                            <p class="total_price">142,000</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <p class="photo"><img src="./images/new003.jpg" alt=""></p>
+                        <div class="item_info">
+                            <div class="brand_item">
+                                <p class="brand">굿온</p>
+                                <p class="item_name">피그먼트 다잉 헤비코튼 포켓 반팔 티셔츠 컬렉션</p>
+                            </div>
+                            <p class="total_price">108,000</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <p class="photo"><img src="./images/new004.jpg" alt=""></p>
+                        <div class="item_info">
+                            <div class="brand_item">
+                                <p class="brand">굿온</p>
+                                <p class="item_name">피그먼트 다잉 헤비코튼 맨투맨 컬렉션</p>
+                            </div>
+                            <p class="total_price">158,000</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="right">
+                    <a href="#">
+                        <p class="photo"><img src="./images/new005.jpg" alt=""></p>
+                        <div class="item_info">
+                            <span class="brand">맥포스</span>
+                            <em class="item_name">알바트로스 EDC 3웨이 백 4color</em>
+                            <span class="price">328,000</span>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
+        <div class="bg">
+            <section class="weekly_brand">
+                <h2>Guernsey Woollens</h2>
+                <div class="content_wrap">
+                    <div class="lookbook">
+                        <img src="./images/guernsey_visual.jpg" alt="">
+                    </div>
+                    <div class="right">
+                        <div class="info_shop_btn">
+                            <p class="brand_info">
+                                영국의 건지섬에서 태어난 400년의 역사를 가진 스웨터 전문 브랜드로<br>
+                                절대적인 실력을 자랑하는 장인이 손수 현대의 실루엣에 맞게 제작합니다.<br>
+                                역사가 담긴 패턴과 디테일을 가진 니트웨어를 만나보세요.
+                            </p>
+                            <a href="#" class="brand_shop_btn"><img src="./images/more_w_btn.png" alt="더보기"></a>
+                        </div>
+                        <div class="item_wrap">
+                            <a href="#">
+                                <p class="photo"><img src="./images/guernsey001.jpg" alt=""></p>
+                                <div class="item_info">
+                                    <div class="brand_item">
+                                        <p class="brand">건지울른스</p>
+                                        <p class="item_name">코튼 반팔 카라 니트 - 블랙</p>
+                                    </div>
+                                    <div class="price_wrap">
+                                        <p class="original_price"><del>98,000</del></p>
+                                        <div class="sale_price">
+                                            <p class="sale">20%</p>
+                                            <p class="total_price">78,400</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <p class="photo"><img src="./images/guernsey002.jpg" alt=""></p>
+                                <div class="item_info">
+                                    <div class="brand_item">
+                                        <p class="brand">건지울른스</p>
+                                        <p class="item_name">코튼 반팔 쿠루넥 니트 - 샌드 베이지</p>
+                                    </div>
+                                    <div class="price_wrap">
+                                        <p class="original_price"><del>98,000</del></p>
+                                        <div class="sale_price">
+                                            <p class="sale">20%</p>
+                                            <p class="total_price">78,400</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <p class="photo"><img src="./images/guernsey002.jpg" alt=""></p>
+                                <div class="item_info">
+                                    <div class="brand_item">
+                                        <p class="brand">건지울른스</p>
+                                        <p class="item_name">코튼 반팔 쿠루넥 니트 - 데님 블루</p>
+                                    </div>
+                                    <div class="price_wrap">
+                                        <p class="original_price"><del>98,000</del></p>
+                                        <div class="sale_price">
+                                            <p class="sale">20%</p>
+                                            <p class="total_price">78,400</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
 </body>
 </html>

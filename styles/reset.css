@@ -6,7 +6,7 @@ p,ul,ol,li,dl,dt,dd,table,tr,td,th,thead,tbody,tfoot,
 div,header,nav,aside,article,section,footer,figure,
 address,blockquote,video,iframe,hr,
 span,em,strong,q,a,sub,sup,details,figcaption,summary,time,s,del,code,mark,img {
-    font-family: "Roboto Condensed", "pretendard", sans-serif;/* 가장 근접한 글꼴 */
+    font-family: /* "Roboto Condensed",  */"pretendard", sans-serif;/* 가장 근접한 글꼴 */
     font-size: 1.0em; 
     font-weight:normal;
     font-style:normal;

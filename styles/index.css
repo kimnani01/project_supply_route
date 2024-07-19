@@ -1,10 +1,45 @@
-.join_event {background: #000;}
+.join_event {
+    background: #000; width: 100%;
+    position: fixed; z-index: 999; left: 0; top: 0;
+}
 .join_event p {
     color: #fff; text-align: center;
     font-weight: 600; line-height: 43px;
 }
 /* main */
 main {}
+/* section 공통 */
+section {max-width: 1500px;}
+/* h2 공통 */
+h2 {
+    font-family: "Roboto Condensed", "pretendard", sans-serif; 
+    font-weight: 800; font-size: 3.125rem;
+}
+/* 할인 상품 설명 공통(best, 건지울른스,) */
+.item_info {
+    display: flex; justify-content: space-between; align-items: end;
+    padding: 10px 0;
+}
+.item_info .brand_item {}
+.item_info .brand_item .brand {
+    font-size: 0.875rem; font-weight: 600;
+    margin-bottom: 10px;
+}
+.item_info .brand_item .item_name {}
+.item_info .price_wrap {}
+.item_info .price_wrap .original_price {
+    margin-bottom: 10px; text-align: end;
+}
+.item_info .price_wrap .original_price del {
+    font-size: 0.875rem; font-weight: 600; color: #ccc;
+}
+.item_info .price_wrap .sale_price {display: flex;}
+.item_info .price_wrap .sale_price .sale {
+    color: #f00; font-size: 0.938rem; font-weight: 600; margin-right: 10px;
+}
+.item_info .price_wrap .total_price {
+    font-size: 0.938rem; font-weight: 600;
+}
 /* visual 배너 */
 main .visual {}
 main .visual .swiper-wrapper {}
@@ -14,7 +49,7 @@ main .visual .swiper-wrapper .swiper-slide a img {width: 100%;}
 main .visual div[class^=swiper-button]{color: #fff;}
 /* 카테고리 */
 .category {
-    max-width: 1500px; margin: 150px auto;
+    margin: 150px auto;
     display: grid;
     grid-template-areas: 
     'clothes clothes bag watch'
@@ -37,3 +72,160 @@ main .visual div[class^=swiper-button]{color: #fff;}
     font-weight: 700; font-size: 2.25rem;
 }
 .category a img {width: 100%; border-radius: 10px;}
+/* best */
+.best_wrap {margin: 0 auto 150px;}
+.best_wrap .title_more {
+    display: flex; justify-content: space-between;
+    align-items: end; margin-bottom: 30px;
+}
+.best_wrap .title_more h2 {}
+.best_wrap .title_more .more_btn {}
+.best_wrap .title_more .more_btn img {width: 100%;}
+.best_wrap .item_wrap {
+    display: flex; 
+    justify-content: space-between;
+}
+.best_wrap .item_wrap .left {
+    width: 740px;
+}
+.best_wrap .item_wrap .left a {
+    position: relative; left: 0; top: 0; z-index: 800;
+    border-radius: 10px; overflow: hidden; display: inline-block;
+}
+.best_wrap .item_wrap .left a .num {
+    background-color: #000; color: #fff;
+    width: 100px; line-height: 100px; text-align: center;
+    font-weight: 500; font-size: 2.5rem;
+    position: absolute; left: 0; top: 0;
+}
+.best_wrap .item_wrap .left a .photo {}
+.best_wrap .item_wrap .left a .photo img {width: 100%;}
+.best_wrap .item_wrap .left a .item_info {
+    display: flex; flex-flow: column nowrap;
+    align-items: start;
+    gap: 10px; position: absolute; left: 30px; bottom: 30px;
+}
+.best_wrap .item_wrap .left a .item_info .brand {
+    font-weight: 600; font-size: 1.125rem;
+}
+.best_wrap .item_wrap .left a .item_info .item_name {font-size: 1.25rem;}
+.best_wrap .item_wrap .left a .item_info .price {
+    font-weight: 600; font-size: 1.25rem;
+}
+.best_wrap .item_wrap .right {
+    display: flex; flex-flow: row wrap;
+    gap: 20px;
+    width: 740px;
+}
+.best_wrap .item_wrap .right a {
+    width: 360px; height: 353px; 
+}
+.best_wrap .item_wrap .right a .num_photo {
+    border-radius: 10px; overflow: hidden;
+    position: relative; left: 0; right: 0; z-index: 800;
+}
+.best_wrap .item_wrap .right a .num_photo .num {
+    background-color: #000; color: #fff;
+    line-height: 55px; width: 55px; text-align: center;
+    font-size: 1.25rem; font-weight: 500;
+    position: absolute; left: 0; top: 0;
+}
+.best_wrap .item_wrap .right a .num_photo .photo {}
+.best_wrap .item_wrap .right a .num_photo .photo img {width: 100%;}
+.best_wrap .item_wrap .right a .item_info {}
+.best_wrap .item_wrap .right a .item_info .brand_item {}
+.best_wrap .item_wrap .right a .item_info .brand_item .brand {}
+.best_wrap .item_wrap .right a .item_info .brand_item .item_name {}
+.best_wrap .item_wrap .right a .item_info .price_wrap {}
+.best_wrap .item_wrap .right a .item_info .price_wrap .original_price {}
+.best_wrap .item_wrap .right a .item_info .price_wrap .original_price del {}
+.best_wrap .item_wrap .right a .item_info .price_wrap .sale_price {}
+.best_wrap .item_wrap .right a .item_info .price_wrap .sale_price .sale {}
+.best_wrap .item_wrap .right a .item_info .price_wrap .sale_price .total_price {}
+/* new */
+.new_wrap {max-width: 1500px; margin: 0 auto 150px;}
+.new_wrap .title_more {
+    display: flex; justify-content: space-between;
+    align-items: end; margin-bottom: 30px;
+}
+.new_wrap .title_more h2 {}
+.new_wrap .title_more .more_btn {}
+.new_wrap .title_more .more_btn img {width: 100%;}
+.new_wrap .item_wrap {display: flex; justify-content: space-between;}
+.new_wrap .item_wrap .left {
+    display: flex; flex-flow: row wrap;
+    gap: 20px;
+    width: 740px;
+}
+.new_wrap .item_wrap .left a {width: 360px; height: 353px;}
+.new_wrap .item_wrap .left a .photo {border-radius: 10px; overflow: hidden;}
+.new_wrap .item_wrap .left a .photo img {width: 100%;}
+.new_wrap .item_wrap .left a .item_info {
+    display: flex; justify-content: space-between; align-items: end;
+    padding: 10px 0;
+}
+.new_wrap .item_wrap .left a .item_info .brand_item {}
+.new_wrap .item_wrap .left a .item_info .brand_item .brand {
+    font-size: 0.875rem; font-weight: 600;
+    margin-bottom: 10px;
+}
+.new_wrap .item_wrap .left a .item_info .brand_item .item_name {}
+.new_wrap .item_wrap .left a .item_info .total_price {font-size: 0.938rem; font-weight: 600;}
+.new_wrap .item_wrap .right {width: 740px;}
+.new_wrap .item_wrap .right a {
+    position: relative; left: 0; top: 0; z-index: 800;
+    border-radius: 10px; overflow: hidden; display: inline-block;
+}
+.new_wrap .item_wrap .right a .photo {border-radius: 10px;}
+.new_wrap .item_wrap .right a .photo img {width: 100%;}
+.new_wrap .item_wrap .right a .item_info {
+    display: flex; flex-flow: column nowrap;
+    align-items: start;
+    gap: 10px; position: absolute; left: 30px; bottom: 30px;
+}
+.new_wrap .item_wrap .right a .item_info .brand {
+    font-weight: 600; font-size: 1.125rem;
+}
+.new_wrap .item_wrap .right a .item_info .item_name {font-size: 1.25rem;}
+.new_wrap .item_wrap .right a .item_info .price {font-weight: 600; font-size: 1.25rem;}
+/* 이주의 브랜드 (건지울른스) */
+.bg {background: url(../images/bg001.jpg);}
+.bg .weekly_brand {
+    margin: 0 auto 150px;
+    padding-top: 150px;
+}
+.bg .weekly_brand h2 {
+    color: #fff; font-size: 6.25rem;
+    margin-bottom: 30px;
+}
+.bg .weekly_brand .content_wrap {
+    display: flex;
+}
+.bg .weekly_brand .content_wrap .lookbook {
+    border: 10px solid #fff; width: 470px;
+    margin-right: 35px;
+}
+.bg .weekly_brand .content_wrap .lookbook img {width: 100%;}
+.bg .weekly_brand .content_wrap .right {width: 100%;}
+.bg .weekly_brand .content_wrap .right .info_shop_btn {
+    display: flex; justify-content: space-between;
+    align-items: end;
+}
+.bg .weekly_brand .content_wrap .right .info_shop_btn .brand_info {
+    color: #fff; line-height: 1.5; letter-spacing: -0.2px;
+    font-size: 1.125rem; 
+}
+.bg .weekly_brand .content_wrap .right .info_shop_btn .brand_shop_btn {}
+.bg .weekly_brand .content_wrap .right .item_wrap {}
+.bg .weekly_brand .content_wrap .right .item_wrap a {}
+.bg .weekly_brand .content_wrap .right .item_wrap a .photo {}
+.bg .weekly_brand .content_wrap .right .item_wrap a .photo img {}
+.bg .weekly_brand .content_wrap .right .item_wrap a .item_info {}
+.bg .weekly_brand .content_wrap .right .item_wrap a .item_info .brand {}
+.bg .weekly_brand .content_wrap .right .item_wrap a .item_info .item_name {}
+.bg .weekly_brand .content_wrap .right .item_wrap a .item_info .price_wrap {}
+.bg .weekly_brand .content_wrap .right .item_wrap a .item_info .price_wrap .original_price {}
+.bg .weekly_brand .content_wrap .right .item_wrap a .item_info .price_wrap .original_price del {}
+.bg .weekly_brand .content_wrap .right .item_wrap a .item_info .price_wrap .sale_price {}
+.bg .weekly_brand .content_wrap .right .item_wrap a .item_info .price_wrap .sale_price .sale {}
+.bg .weekly_brand .content_wrap .right .item_wrap a .item_info .price_wrap .sale_price .sale .total_price {}

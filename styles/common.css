@@ -6,7 +6,10 @@
 .top_btn a {}
 .top_btn a img {}
 /* header */
-.header_bg {background-color: #fff;}
+.header_bg {
+    background-color: #fff; width: 100%;
+    position: fixed; z-index: 999; left: 0; top: 43px;
+}
 .header_bg header {
     max-width: 1500px;
     margin: 15px auto;
@@ -30,7 +33,7 @@
 }
 .header_bg header .menu_user nav .gnb li:last-child {margin: 0;}
 .header_bg header .menu_user nav .gnb li a {
-    font-weight: 500;
+    font-family: "Roboto Condensed", "pretendard", sans-serif; font-weight: 500; 
 }
 .header_bg header .menu_user nav .gnb li a img {}
 .header_bg header .menu_user .search_user {
