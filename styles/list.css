@@ -15,4 +15,4 @@ main {margin-top: 148px;}
 .bg .brand_info p em {
     font-size: 1.25rem; font-weight: 700;
 }
-.bg .brand_info p:last-child {font-size: 1.25rem;}
+.bg .brand_info p:last-child {font-size: 1.25rem; line-height: 1.5;}

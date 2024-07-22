@@ -37,14 +37,32 @@
 .header_bg header .menu_user nav .gnb {
     display: flex; align-items: center;
 }
-.header_bg header .menu_user nav .gnb li {
+.header_bg header .menu_user nav .gnb > li {
     margin-right: 50px;
 }
-.header_bg header .menu_user nav .gnb li:last-child {margin: 0;}
-.header_bg header .menu_user nav .gnb li a {
-    font-family: "Roboto Condensed", "pretendard", sans-serif; font-weight: 500; 
+.header_bg header .menu_user nav .gnb > li:last-child {margin: 0;}
+.header_bg header .menu_user nav .gnb > li > a {
+    font-family: "Roboto Condensed", "pretendard", sans-serif; 
+    font-weight: 500;
 }
-.header_bg header .menu_user nav .gnb li a img {}
+.header_bg header .menu_user nav .gnb li > a img {width: 100%;}
+.header_bg header .menu_user nav .gnb > li .bg {
+    background-color: #fff;
+}
+.header_bg header .menu_user nav .gnb > li .bg .depth1 {
+    position: absolute; top: 105px; left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+.header_bg header .menu_user nav .gnb > li .bg .depth1 > li {}
+.header_bg header .menu_user nav .gnb > li .bg .depth1 > li > a {
+    font-size: 1.25rem; font-weight: 500;
+}
+.header_bg header .menu_user nav .gnb > li .bg .depth1 > li .depth2 {}
+.header_bg header .menu_user nav .gnb > li .bg .depth1 > li .depth2 li {}
+.header_bg header .menu_user nav .gnb > li .bg .depth1 > li .depth2 li a {
+    font-size: 0.875rem;
+}
 .header_bg header .menu_user .search_user {
     display: flex;
     align-items: center;

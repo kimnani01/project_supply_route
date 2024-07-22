@@ -25,3 +25,5 @@
 - 헤더 ~ 카테고리 html, css
 ### 0719
 - best ~ new html, css
+### 0722
+- 메인페이지 html, css 완료
