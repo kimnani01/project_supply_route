@@ -1,0 +1,18 @@
+main {margin-top: 148px;}
+/* 상단배너 */
+.bg {background: url(../images/list/banner001.jpg);
+    background-size: cover;
+    height: 500px;
+}
+.bg .brand_info {
+    max-width: 1500px; margin: 0 auto; padding: 129px 0;
+    color: #fff;
+}
+.bg .brand_info h1 {
+    font-size: 2.5rem; font-weight: 800;
+}
+.bg .brand_info p:first-of-type {margin: 40px 0 10px;}
+.bg .brand_info p em {
+    font-size: 1.25rem; font-weight: 700;
+}
+.bg .brand_info p:last-child {font-size: 1.25rem;}

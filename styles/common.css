@@ -5,6 +5,15 @@
 }
 .top_btn a {}
 .top_btn a img {}
+/* 회원가입 이벤트 */
+.join_event {
+    background: #000; width: 100%;
+    position: fixed; z-index: 999; left: 0; top: 0;
+}
+.join_event p {
+    color: #fff; text-align: center;
+    font-weight: 600; line-height: 43px;
+}
 /* header */
 .header_bg {
     background-color: #fff; width: 100%;
