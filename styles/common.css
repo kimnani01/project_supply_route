@@ -46,7 +46,7 @@
     width: 200px;
 }
 .header_bg header .menu_user .search_user .search_wrap input {
-    border: 0; outline: 0;
+    border: 0; outline: 0; width: 176px;
 }
 .header_bg header .menu_user .search_user .search_wrap #search_btn {
     background: none; border: 0;
@@ -54,3 +54,65 @@
 .header_bg header .menu_user .search_user .search_wrap #search_btn img {}
 .header_bg header .menu_user .search_user a {margin-left: 10px;}
 .header_bg header .menu_user .search_user a img {}
+/* 입점브랜드 루프 */
+.loop {
+    width: 100%; overflow: hidden;
+}
+.loop .loop_b {
+    background: url(../images/loop001.jpg) repeat;
+    height: 79px;
+    animation: loop_b 180s linear infinite;
+}
+.loop .loop_w {
+    background: url(../images/loop002.jpg) repeat;
+    height: 79px;
+    animation: loop_w 180s linear infinite;
+}
+/* footer */
+footer {background-color: #000; padding: 50px 0;}
+footer .inner {
+    max-width: 1500px; margin: 0 auto;
+    display: flex; justify-content: space-between;
+}
+footer .inner .left {color: #ccc; font-size: 0.875rem;}
+footer .inner .left > a {}
+footer .inner .left > a img {}
+footer .inner .left .sns {margin: 20px 0;}
+footer .inner .left .sns a {}
+footer .inner .left .sns a img {}
+footer .inner .left .address {}
+footer .inner .left .address li {
+    color: #ccc; margin-bottom: 5px;
+}
+footer .inner .left .address li:last-child {margin: 0;}
+footer .inner .left .address li a {color: #fff; border-bottom: 1px solid #fff;}
+footer .inner .left .address li span {margin: 0 10px;}
+footer .inner .left .law {
+    display: flex; margin: 20px 0;
+}
+footer .inner .left .law a {color: #ccc;}
+footer .inner .left .law span {margin: 0 10px;}
+footer .inner .left .copyright {}
+footer .inner .left .copyright p {margin-bottom: 5px;}
+footer .inner .left .copyright p:last-child {margin: 0;}
+footer .inner .right {color: #fff; text-align: end;}
+footer .inner .right .title {color: #ccc; font-size: 0.75rem;}
+footer .inner .right .number {
+    margin: 10px 0;
+    font-size: 1.875rem; font-weight: 700;
+}
+footer .inner .right > a {
+    color: #fff; border-bottom: 1px solid #fff;
+    font-size: 0.938rem; font-weight: 700;
+}
+footer .inner .right .time {margin: 20px 0;}
+footer .inner .right .time p {
+    color: #ccc; margin-bottom: 5px; font-size: 0.875rem;
+}
+footer .inner .right .time p:last-child {margin: 0;}
+footer .inner .right .link {
+    display: flex;
+}
+footer .inner .right .link li {}
+footer .inner .right .link li a {color: #fff; font-size: 0.938rem; font-weight: 700;}
+footer .inner .right .link li span {margin: 0 10px;}

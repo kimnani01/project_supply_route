@@ -18,6 +18,7 @@
     <!-- css, js -->
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/animation.css">
     <link rel="stylesheet" href="./styles/index.css">
     <script src="./scripts/scripts.js" defer></script>
 </head>
@@ -66,7 +67,7 @@
             <div class="swiper-button-next"></div>
         </div>
         <!-- 카테고리 -->
-        <div class="category">
+        <div id="category">
             <a href="#" id="clothes"><span>CLOTHES</span><img src="./images/clothes.jpg" alt=""></a>
             <a href="#" id="acc"><span>STUFF & ACC</span><img src="./images/acc.jpg" alt=""></a>
             <a href="#" id="shoes"><span>SHOSE</span><img src="./images/shoes.jpg" alt=""></a>
@@ -151,12 +152,10 @@
                         </div>
                     </a>
                     <a href="#">
-                        <p class="num_photo">
-                            <div class="num_photo">
-                                <p class="num">5</p>
-                                <p class="photo"><img src="./images/best005.jpg" alt=""></p>
-                            </div>
-                        </p>
+                        <div class="num_photo">
+                            <p class="num">5</p>
+                            <p class="photo"><img src="./images/best005.jpg" alt=""></p>
+                        </div>
                         <div class="item_info">
                             <div class="brand_item">
                                 <p class="brand">블루드쇼프</p>
@@ -249,7 +248,7 @@
                                 절대적인 실력을 자랑하는 장인이 손수 현대의 실루엣에 맞게 제작합니다.<br>
                                 역사가 담긴 패턴과 디테일을 가진 니트웨어를 만나보세요.
                             </p>
-                            <a href="#" class="brand_shop_btn"><img src="./images/more_w_btn.png" alt="더보기"></a>
+                            <a href="#" class="brand_shop_btn"><img src="./images/brand_shop_btn_w.png" alt="brand shop 바로가기"></a>
                         </div>
                         <div class="item_wrap">
                             <a href="#">
@@ -285,7 +284,7 @@
                                 </div>
                             </a>
                             <a href="#">
-                                <p class="photo"><img src="./images/guernsey002.jpg" alt=""></p>
+                                <p class="photo"><img src="./images/guernsey003.jpg" alt=""></p>
                                 <div class="item_info">
                                     <div class="brand_item">
                                         <p class="brand">건지울른스</p>
@@ -305,6 +304,296 @@
                 </div>
             </section>
         </div>
+        <div class="banner">
+            <img src="./images/banner001.jpg" alt="오리지널 캘리포니아 해변의 감성과 자유를 느껴보세요">
+        </div>
+        <section class="popular">
+            <h2>POPULAR BRANDS</h2>
+            <div class="content_wrap">
+                <div class="brand">
+                    <p class="photo"><img src="./images/popular001.jpg" alt=""></p>
+                    <div class="info_shop_btn">
+                        <div class="info">
+                            <p class="ko_name">건지울른스</p>
+                            <p class="en_name">Guernsey Woollens</p>
+                            <p class="story">영국의 건지섬에서 태어난 400년의 역사를 가진 스웨터 전문 브랜드로 절대적인 실력을 자랑하는 장인이 손수 현대의 실루엣에 맞게 제작합니다. 역사가 담긴 패턴과 디테일을 가진 니트웨어를 만나보세요.</p>
+                        </div>
+                        <a href="#" class="brand_shop_btn"><img src="./images/brand_shop_btn.png" alt="brand shop 바로가기"></a>
+                    </div>
+                </div>
+                <div class="brand">
+                    <p class="photo"><img src="./images/popular002.jpg" alt=""></p>
+                    <div class="info_shop_btn">
+                        <div class="info">
+                            <p class="ko_name">레드윙</p>
+                            <p class="en_name">RED WING SHOES</p>
+                            <p class="story">레드윙은 1905년 설립자인 찰스 백맨이 미국 미네소타에서 견고한 작업화를 만들면서 시작되었습니다. 100년이 넘는 역사를 자랑하는 아메리칸 클래식 부츠의 대명사로 전문 작업자들을 위한 워크부츠부터 클래식한 고급 부츠인 헤리티지 컬렉션 등 다양한 라인을 선보이고 있습니다.</p>
+                        </div>
+                        <a href="#" class="brand_shop_btn"><img src="./images/brand_shop_btn.png" alt="brand shop 바로가기"></a>
+                    </div>
+                </div>
+                <div class="brand">
+                    <p class="photo"><img src="./images/popular003.jpg" alt=""></p>
+                    <div class="info_shop_btn">
+                        <div class="info">
+                            <p class="ko_name">맥포스</p>
+                            <p class="en_name">Magforce</p>
+                            <p class="story">맥포스는 본격 밀리터리 택티컬 컨셉으로 견고함과 기능성에 중점을 둔 오리지널 라인으로 각기 제품들은 용도와 목적 그리고 환경과 상황에 대처할 수 있는 각 제품군을 만나보실 수 있습니다. 모든 제품군들은 대만 본사에서 디자인되고 생산되고 있습니다.</p>
+                        </div>
+                        <a href="#" class="brand_shop_btn"><img src="./images/brand_shop_btn.png" alt="brand shop 바로가기"></a>
+                    </div>
+                </div>
+                <div class="brand">
+                    <p class="photo"><img src="./images/popular004.jpg" alt=""></p>
+                    <div class="info_shop_btn">
+                        <div class="info">
+                            <p class="ko_name">안티치로마니</p>
+                            <p class="en_name">Antichi Romani</p>
+                            <p class="story">직접 가죽을 자르고 재봉하여 항상 새롭고 혁신적인 도전과 자유로운 메트로폴리탄 스타일을 지향하는 브랜드입니다. 소가죽으로 완성된 어퍼 라인과 이탈리아 핸드메이드에서 볼 수 있는 정교한 스티치 디테일에서 보여지는 장인 정신을 이어갑니다.</p>
+                        </div>
+                        <a href="#" class="brand_shop_btn"><img src="./images/brand_shop_btn.png" alt="brand shop 바로가기"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="stylist">
+            <div class="item_wrap">
+                <a href="#">
+                    <p class="category">TOP</p>
+                    <p class="photo"><img src="./images/stylist001.jpg" alt=""></p>
+                    <div class="item_info">
+                        <div class="brand_item">
+                            <p class="brand">건지울른스</p>
+                            <p class="item_name">코튼 반팔 크루넥 니트 - 블랙</p>
+                        </div>
+                        <p class="price">98,000</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <p class="category">BOTTOM</p>
+                    <p class="photo"><img src="./images/stylist002.jpg" alt=""></p>
+                    <div class="item_info">
+                        <div class="brand_item">
+                            <p class="brand">그라미치</p>
+                            <p class="item_name">NN 반바지 - 블랙</p>
+                        </div>
+                        <p class="price">99,000</p>
+                    </div>
+                </a>
+            </div>
+            <div class="stylist_main">
+                <p class="photo"><img src="./images/stylist_main.jpg" alt=""></p>
+                <div class="tag">
+                    <div class="left"><p>#2024SS</p></div>
+                    <div class="right">
+                        <p>#시크</p>
+                        <p>#올블랙</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item_wrap">
+                <a href="#">
+                    <p class="category">ACC</p>
+                    <p class="photo"><img src="./images/stylist003.jpg" alt=""></p>
+                    <div class="item_info">
+                        <div class="brand_item">
+                            <p class="brand">맥포스</p>
+                            <p class="item_name">스왈로우 슬링백 - 블랙</p>
+                        </div>
+                        <p class="price">142,800</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <p class="category">SHOES</p>
+                    <p class="photo"><img src="./images/stylist004.jpg" alt=""></p>
+                    <div class="item_info">
+                        <div class="brand_item">
+                            <p class="brand">문스타</p>
+                            <p class="item_name">스틸바이핸드X문스타 스니커즈 - 블랙</p>
+                        </div>
+                        <p class="price">198,800</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section class="new_brand">
+            <h2>NEW BRAND</h2>
+            <div class="item_wrap">
+                <a href="#"><img src="./images/new_brand_main.jpg" alt="Katin"></a>
+                <div class="item">
+                    <a href="#">
+                        <p class="photo"><img src="./images/new_brand001.jpg" alt=""></p>
+                        <div class="item_info">
+                            <div class="brand_item">
+                                <p class="brand">케이튼</p>
+                                <p class="item_name">카바나 반팔 티셔츠 - 핑크</p>
+                            </div>
+                            <div class="price_wrap">
+                                <p class="original_price"><del>58,000</del></p>
+                                <div class="sale_price">
+                                    <p class="sale">25%</p>
+                                    <p class="total_price">43,500</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <p class="photo"><img src="./images/new_brand002.jpg" alt=""></p>
+                        <div class="item_info">
+                            <div class="brand_item">
+                                <p class="brand">케이튼</p>
+                                <p class="item_name">웨트랜드 반팔 티셔츠 - 베이 블루</p>
+                            </div>
+                            <div class="price_wrap">
+                                <p class="original_price"><del>58,000</del></p>
+                                <div class="sale_price">
+                                    <p class="sale">25%</p>
+                                    <p class="total_price">43,500</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <p class="photo"><img src="./images/new_brand003.jpg" alt=""></p>
+                        <div class="item_info">
+                            <div class="brand_item">
+                                <p class="brand">케이튼</p>
+                                <p class="item_name">그러비 Ⅱ 반팔 티셔츠 - 화이트</p>
+                            </div>
+                            <div class="price_wrap">
+                                <p class="original_price"><del>58,000</del></p>
+                                <div class="sale_price">
+                                    <p class="sale">25%</p>
+                                    <p class="total_price">43,500</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="curation">
+            <h2>CONTENT CURATION</h2>
+            <div class="content_wrap">
+                <a href="#">
+                    <p class="photo"><img src="./images/curation001.jpg" alt=""></p>
+                    <div class="info">
+                        <p><span>오직 프랑스에서 만들어지는</span></p>
+                        <p>블루드쇼프의 이야기</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <p class="photo"><img src="./images/curation002.jpg" alt=""></p>
+                    <div class="info">
+                        <p><span>캘리포니아 서핑의 역사와 함께 시작한</span></p>
+                        <p>케이튼</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <p class="photo"><img src="./images/curation003.jpg" alt=""></p>
+                    <div class="info">
+                        <p><span>시간과 경년에 따라 변화하는</span></p>
+                        <p>굿온의 특별한 연색 피그먼트 다잉</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <p class="photo"><img src="./images/curation004.jpg" alt=""></p>
+                    <div class="info">
+                        <p><span>건지 스웨터의 역사</span></p>
+                        <p>400년 전통이 담긴 건지울른스</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section class="store">
+            <h2>
+                <span>당신의 옷장</span><br>
+                <em>더 즐거운</em><br>
+                <span>경험이 되길 바라며</span>
+            </h2>
+            <div class="content_wrap">
+                <div class="content">
+                    <p class="photo"><img src="./images/shop001.jpg" alt=""></p>
+                    <div class="info">
+                        <p class="title">서플라이루트 가로수길 스토어 2F</p>
+                        <p>
+                            2층 서플라이루트 편집샵<br>
+                            영업시간 : 연중무휴, 오전 11시 30분 ~ 오후 9시<br>
+                            Tel : 070-4610-2800<br>
+                            Address : 서울시 강남구 강남대로 162길 40-2 1, 2F
+                        </p>
+                        <a><img src="./images/google_map_btn.png" alt="google map으로 보기"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <p class="photo"><img src="./images/shop002.jpg" alt=""></p>
+                    <div class="info">
+                        <p class="title">레드윙 플래그쉽 스토어 1F</p>
+                        <p>
+                            1층 레드윙 코리아<br>
+                            영업시간 : 연중무휴, 오전 11시 30분 ~ 오후 9시<br>
+                            Tel : 070-4610-2800<br>
+                            Address : 서울시 강남구 강남대로 162길 40-2 1, 1F
+                        </p>
+                        <a><img src="./images/google_map_btn.png" alt="google map으로 보기"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="loop">
+            <div class="loop_b"></div>
+            <div class="loop_w"></div>
+        </div>
+        <footer>
+            <div class="inner">
+                <div class="left">
+                    <a href="#"><img src="./images/logo_w.png" alt="서플라이루트"></a>
+                    <div class="sns">
+                        <a href="#"><img src="./images/facebook.png" alt="페이스북"></a>
+                        <a href="#"><img src="./images/instagram.png" alt="인스타그램"></a>
+                        <a href="#"><img src="./images/naver.png" alt="네이버"></a>
+                    </div>
+                    <ul class="address">
+                        <li>
+                            회사명 : 서플라이루트 주식회사 <span>|</span>
+                            대표 : 장순호 <span>|</span>
+                            이메일 : support@supplyroute.co.kr
+                        <li>
+                            주소 : 경기도 성남시 분당구 황새울로 337(서현동) 웰빙프라자 5층 501-3호<span>|</span>
+                            사업자 등록번호 : 144-81-04149
+                        </li>
+                        <li>
+                            통신판매업 신고 : 제2013-경기성남-0036 
+                            <a href="#">사업자정보확인&gt;</a><span>|</span>
+                            개인정보책임관리자 : 이영란(support@supplyroute.co.kr)
+                        </li>
+                    </ul>
+                    <ul class="law">
+                        <li><a href="#">회사소개</a><span>|</span></li>
+                        <li><a href="#">이용약관</a><span>|</span></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                    </ul>
+                    <div class="copyright">
+                        <p>COPYRIGHT&copy;2018 서플라이루트 공식스토어.  ALL RIGHTS RESERVED</p>
+                        <p>HOSTING BY 엔에이치엔커머스(주). DESIGN BY 디자인위브</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <p class="title">고객센터</p>
+                    <p class="number">070.4706.0094</p>
+                    <a href="#">카카오톡 상담 : @서플라이루트</a>
+                    <div class="time">
+                        <p>월-금 오전 11시 - 오후 5시</p>
+                        <p>점심시간 오후 12시 - 오후 1시</p>
+                    </div>
+                    <ul class="link">
+                        <li><a href="#">공지사항</a><span>|</span></li>
+                        <li><a href="#">1:1문의</a><span>|</span></li>
+                        <li><a href="#">FAQ(자주 묻는 질문)</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
     </main>
 </body>
 </html>

@@ -23,3 +23,5 @@
 - 배너제작
 ### 0713
 - 헤더 ~ 카테고리 html, css
+### 0719
+- best ~ new html, css

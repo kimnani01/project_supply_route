@@ -1,0 +1,8 @@
+@keyframes loop_b {
+    0% {background-position-x: 9924px;}
+    100% {background-position-x: 0;}
+}
+@keyframes loop_w {
+    0% {background-position-x: 0;}
+    100% {background-position-x: 9924px;}
+}
