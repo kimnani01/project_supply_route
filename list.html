@@ -20,7 +20,8 @@
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/animation.css">
     <link rel="stylesheet" href="./styles/list.css">
-    <script src="./scripts/scripts.js" defer></script>
+    <script src="./scripts/common.js" defer></script>
+    <script src="./scripts/list.js" defer></script>
 </head>
 <body>
     <!-- top btn -->
@@ -33,7 +34,70 @@
             <div class="menu_user">
                 <nav>
                     <ul class="gnb">
-                        <li><a href="#"><img src="./images/menu.svg" alt="카테고리"></a></li>
+                        <li><a href="#"><img src="./images/menu.svg" alt="카테고리"></a>
+                            <div class="bg">
+                                <ul class="depth1">
+                                    <li><a href="#">의류</a>
+                                        <ul class="depth2">
+                                            <li><a href="#">아우터</a></li>
+                                            <li><a href="#">상의</a></li>
+                                            <li><a href="#">하의</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">잡화 & ACC</a>
+                                        <ul class="depth2">
+                                            <li><a href="#">팔찌</a></li>
+                                            <li><a href="#">장갑</a></li>
+                                            <li><a href="#">모자</a></li>
+                                            <li><a href="#">지갑 / 벨트</a></li>
+                                            <li><a href="#">안경 / 선글라스</a></li>
+                                            <li><a href="#">머플러 / 숄</a></li>
+                                            <li><a href="#">기타</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">신발</a>
+                                        <ul class="depth2">
+                                            <li><a href="#">스니커즈</a></li>
+                                            <li><a href="#">구두</a></li>
+                                            <li><a href="#">워커</a></li>
+                                            <li><a href="#">샌들</a></li>
+                                            <li><a href="#">슈케어용품</a></li>
+                                            <li><a href="#">신발끈</a></li>
+                                            <li><a href="#">양말</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">가방</a>
+                                        <ul class="depth2">
+                                            <li><a href="#">백팩 / 캐리어</a></li>
+                                            <li><a href="#">힙색 / 웨이스트백</a></li>
+                                            <li><a href="#">브리프케이스</a></li>
+                                            <li><a href="#">숄더백 / 보스턴백</a></li>
+                                            <li><a href="#">크로스백</a></li>
+                                            <li><a href="#">슬링백 / 메신저백</a></li>
+                                            <li><a href="#">토트백</a></li>
+                                            <li><a href="#">파우치</a></li>
+                                            <li><a href="#">패치</a></li>
+                                            <li><a href="#">스트랩 / 키홀더 / 버클</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">시계</a>
+                                        <ul class="depth2">
+                                            <li><a href="#">쿼츠(배터리)</a></li>
+                                            <li><a href="#">오토매틱(수동)</a></li>
+                                            <li><a href="#">필드</a></li>
+                                            <li><a href="#">티타늄</a></li>
+                                            <li><a href="#">다이버</a></li>
+                                            <li><a href="#">스트랩</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">라이프</a>
+                                        <ul class="depth2">
+                                            <li><a href="#">가구 / 인테리어</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
                         <li><a href="#">BRAND</a></li>
                         <li><a href="#">BEST</a></li>
                         <li><a href="#">NEW</a></li>
@@ -55,7 +119,7 @@
         </header>
     </div>
     <main>
-        <div class="bg">
+        <div class="visual">
             <section class="brand_info">
                 <h1>케이튼 [Katin]</h1>
                 <p><em>캘리포니아 서핑 룩의 시초, 케이튼</em></p>
@@ -66,7 +130,422 @@
             </section>
         </div>
         <div class="content_wrap">
-            <div class="snb"></div>
+            <div class="snb">
+                <h1>케이튼</h1>
+                <ul class="menu">
+                    <li><a href="#">전체</a></li>
+                    <li><a href="#">그래픽 티셔츠</a></li>
+                    <li><a href="#">보드숏</a></li>
+                    <li><a href="#">데일리 팬츠</a></li>
+                    <li><a href="#">스웨터/자켓</a></li>
+                    <li><a href="#">바지</a></li>
+                    <li><a href="#">그래픽 맨투맨</a></li>
+                    <li><a href="#">스냅백</a></li>
+                    <li><a href="#">악세서리</a></li>
+                    <li><a href="#">SALE</a></li>
+                </ul>
+            </div>
+            <div class="item_wrap">
+                <div class="md_lookbook">
+                    <div class="swiper md_pick">
+                        <h2>MD PICK</h2>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide1">
+                                <a href="#">
+                                    <div class="item_info">
+                                        <p class="brand">케이튼</p>
+                                        <p class="item_name">풀사이드 볼리 보드숏 - 블랙 워시</p>
+                                        <div class="price_wrap">
+                                            <p class="sale">25%</p>
+                                            <p class="total_price">81,000</p>
+                                            <p class="original_price"><del>108,000</del></p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide slide2">
+                                <a href="#">
+                                    <div class="item_info">
+                                        <p class="brand">케이튼</p>
+                                        <p class="item_name">풀사이드 볼리 보드숏 - 올리브</p>
+                                        <div class="price_wrap">
+                                            <p class="sale">25%</p>
+                                            <p class="total_price">81,000</p>
+                                            <p class="original_price"><del>108,000</del></p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide slide3">
+                                <a href="#">
+                                    <div class="item_info">
+                                        <p class="brand">케이튼</p>
+                                        <p class="item_name">버뮤다 반팔 티셔츠</p>
+                                        <div class="price_wrap">
+                                            <p class="sale">25%</p>
+                                            <p class="total_price">43,500</p>
+                                            <p class="original_price"><del>58,000</del></p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide slide4">
+                                <a href="#">
+                                    <div class="item_info">
+                                        <p class="brand">케이튼</p>
+                                        <p class="item_name">버뮤다 반팔 티셔츠 - 핑크 샌드 워시</p>
+                                        <div class="price_wrap">
+                                            <p class="sale">25%</p>
+                                            <p class="total_price">43,500</p>
+                                            <p class="original_price"><del>58,000</del></p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="lookbook"><a href="#"><img src="./images/list/lookbook.jpg" alt="케이튼 24SS look book 보러가기"></a></div>
+                </div>
+                <div class="list_wrap">
+                    <div class="option">
+                        <p>총 134개의 상품</p>
+                        <ul class="tab">
+                            <li><a href="#">신상품</a></li>
+                            <li><a href="#">추천순</a></li>
+                            <li><a href="#">낮은 가격순</a></li>
+                            <li><a href="#">높은 가격순</a></li>
+                        </ul>
+                    </div>
+                    <ul class="item_list">
+                        <li>
+                            <a href="./detail.html">
+                                <p class="photo">
+                                    <img src="./images/list/product001.jpg" alt="">
+                                </p>
+                                <div class="item_info">
+                                    <p class="brand">케이튼</p>
+                                    <p class="item_name">풀사이드 볼리 보드숏 - 블랙 워시</p>
+                                    <div class="price_wrap">
+                                        <p class="sale">25%</p>
+                                        <p class="total_price">81,000</p>
+                                        <p class="original_price"><del>108,000</del></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./detail.html">
+                                <p class="photo">
+                                    <img src="./images/list/product002.jpg" alt="">
+                                </p>
+                                <div class="item_info">
+                                    <p class="brand">케이튼</p>
+                                    <p class="item_name">풀사이드 볼리 보드숏 - 올리브</p>
+                                    <div class="price_wrap">
+                                        <p class="sale">25%</p>
+                                        <p class="total_price">81,000</p>
+                                        <p class="original_price"><del>108,000</del></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./detail.html">
+                                <p class="photo">
+                                    <img src="./images/list/product003.jpg" alt="">
+                                </p>
+                                <div class="item_info">
+                                    <p class="brand">케이튼</p>
+                                    <p class="item_name">버뮤다 반팔 티셔츠</p>
+                                    <div class="price_wrap">
+                                        <p class="sale">25%</p>
+                                        <p class="total_price">43,500</p>
+                                        <p class="original_price"><del>58,000</del></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./detail.html">
+                                <p class="photo">
+                                    <img src="./images/list/product004.jpg" alt="">
+                                </p>
+                                <div class="item_info">
+                                    <p class="brand">케이튼</p>
+                                    <p class="item_name">버뮤다 반팔 티셔츠 - 핑크 샌드 워시</p>
+                                    <div class="price_wrap">
+                                        <p class="sale">25%</p>
+                                        <p class="total_price">43,500</p>
+                                        <p class="original_price"><del>58,000</del></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./detail.html">
+                                <p class="photo">
+                                    <img src="./images/list/product005.jpg" alt="">
+                                </p>
+                                <div class="item_info">
+                                    <p class="brand">케이튼</p>
+                                    <p class="item_name">웨트랜드 반팔 티셔츠 - 베이 블루</p>
+                                    <div class="price_wrap">
+                                        <p class="sale">25%</p>
+                                        <p class="total_price">43,500</p>
+                                        <p class="original_price"><del>58,000</del></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./detail.html">
+                                <p class="photo">
+                                    <img src="./images/list/product006.jpg" alt="">
+                                </p>
+                                <div class="item_info">
+                                    <p class="brand">케이튼</p>
+                                    <p class="item_name">쇼어리 반팔 티셔츠 - 블랙 워시</p>
+                                    <div class="price_wrap">
+                                        <p class="sale">25%</p>
+                                        <p class="total_price">43,500</p>
+                                        <p class="original_price"><del>58,000</del></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./detail.html">
+                                <p class="photo">
+                                    <img src="./images/list/product007.jpg" alt="">
+                                </p>
+                                <div class="item_info">
+                                    <p class="brand">케이튼</p>
+                                    <p class="item_name">피냐 반팔 티셔츠 - 선 옐로우 샌드 워시</p>
+                                    <div class="price_wrap">
+                                        <p class="sale">25%</p>
+                                        <p class="total_price">43,500</p>
+                                        <p class="original_price"><del>58,000</del></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./detail.html">
+                                <p class="photo">
+                                    <img src="./images/list/product008.jpg" alt="">
+                                </p>
+                                <div class="item_info">
+                                    <p class="brand">케이튼</p>
+                                    <p class="item_name">오르테가 반팔 티셔츠 - 핑크</p>
+                                    <div class="price_wrap">
+                                        <p class="sale">25%</p>
+                                        <p class="total_price">43,500</p>
+                                        <p class="original_price"><del>58,000</del></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./detail.html">
+                                <p class="photo">
+                                    <img src="./images/list/product009.jpg" alt="">
+                                </p>
+                                <div class="item_info">
+                                    <p class="brand">케이튼</p>
+                                    <p class="item_name">그러비 Ⅱ 반팔 티셔츠 - 화이트</p>
+                                    <div class="price_wrap">
+                                        <p class="sale">25%</p>
+                                        <p class="total_price">43,500</p>
+                                        <p class="original_price"><del>58,000</del></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./detail.html">
+                                <p class="photo">
+                                    <img src="./images/list/product010.jpg" alt="">
+                                </p>
+                                <div class="item_info">
+                                    <p class="brand">케이튼</p>
+                                    <p class="item_name">코코 반팔 티셔츠 - 블랙 워시</p>
+                                    <div class="price_wrap">
+                                        <p class="sale">25%</p>
+                                        <p class="total_price">43,500</p>
+                                        <p class="original_price"><del>58,000</del></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./detail.html">
+                                <p class="photo">
+                                    <img src="./images/list/product011.jpg" alt="">
+                                </p>
+                                <div class="item_info">
+                                    <p class="brand">케이튼</p>
+                                    <p class="item_name">램블러 반팔 티셔츠 - 빈티지 화이트</p>
+                                    <div class="price_wrap">
+                                        <p class="sale">25%</p>
+                                        <p class="total_price">43,500</p>
+                                        <p class="original_price"><del>58,000</del></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./detail.html">
+                                <p class="photo">
+                                    <img src="./images/list/product012.jpg" alt="">
+                                </p>
+                                <div class="item_info">
+                                    <p class="brand">케이튼</p>
+                                    <p class="item_name">코코 반팔 티셔츠 - 선 샌드 워시</p>
+                                    <div class="price_wrap">
+                                        <p class="sale">25%</p>
+                                        <p class="total_price">43,500</p>
+                                        <p class="original_price"><del>58,000</del></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./detail.html">
+                                <p class="photo">
+                                    <img src="./images/list/product013.jpg" alt="">
+                                </p>
+                                <div class="item_info">
+                                    <p class="brand">케이튼</p>
+                                    <p class="item_name">코코 반팔 티셔츠 - 스포츠 헤더 그레이</p>
+                                    <div class="price_wrap">
+                                        <p class="sale">25%</p>
+                                        <p class="total_price">43,500</p>
+                                        <p class="original_price"><del>58,000</del></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./detail.html">
+                                <p class="photo">
+                                    <img src="./images/list/product014.jpg" alt="">
+                                </p>
+                                <div class="item_info">
+                                    <p class="brand">케이튼</p>
+                                    <p class="item_name">스웰 반팔 티셔츠 - 블랙 워시</p>
+                                    <div class="price_wrap">
+                                        <p class="sale">25%</p>
+                                        <p class="total_price">43,500</p>
+                                        <p class="original_price"><del>58,000</del></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./detail.html">
+                                <p class="photo">
+                                    <img src="./images/list/product015.jpg" alt="">
+                                </p>
+                                <div class="item_info">
+                                    <p class="brand">케이튼</p>
+                                    <p class="item_name">프라울 반팔 티셔츠 - 핑크</p>
+                                    <div class="price_wrap">
+                                        <p class="sale">25%</p>
+                                        <p class="total_price">43,500</p>
+                                        <p class="original_price"><del>58,000</del></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./detail.html">
+                                <p class="photo">
+                                    <img src="./images/list/product016.jpg" alt="">
+                                </p>
+                                <div class="item_info">
+                                    <p class="brand">케이튼</p>
+                                    <p class="item_name">DESTINATION 반팔 티셔츠 - 그레이 그린</p>
+                                    <div class="price_wrap">
+                                        <p class="sale">25%</p>
+                                        <p class="total_price">43,500</p>
+                                        <p class="original_price"><del>58,000</del></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./detail.html">
+                                <p class="photo">
+                                    <img src="./images/list/product017.jpg" alt="">
+                                </p>
+                                <div class="item_info">
+                                    <p class="brand">케이튼</p>
+                                    <p class="item_name">익스팬스 반팔티셔츠 - 네이비 미네랄</p>
+                                    <div class="price_wrap">
+                                        <p class="sale">25%</p>
+                                        <p class="total_price">43,500</p>
+                                        <p class="original_price"><del>58,000</del></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./detail.html">
+                                <p class="photo">
+                                    <img src="./images/list/product018.jpg" alt="">
+                                </p>
+                                <div class="item_info">
+                                    <p class="brand">케이튼</p>
+                                    <p class="item_name">체크 폴로 티셔츠 - 울</p>
+                                    <div class="price_wrap">
+                                        <p class="sale">40%</p>
+                                        <p class="total_price">58,800</p>
+                                        <p class="original_price"><del>98,000</del></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./detail.html">
+                                <p class="photo">
+                                    <img src="./images/list/product019.jpg" alt="">
+                                </p>
+                                <div class="item_info">
+                                    <p class="brand">케이튼</p>
+                                    <p class="item_name">풀사이드 볼리 보드숏 - 라벤더</p>
+                                    <div class="price_wrap">
+                                        <p class="sale"></p>
+                                        <p class="total_price">Sold Out</p>
+                                        <p class="original_price"><del></del></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./detail.html">
+                                <p class="photo">
+                                    <img src="./images/list/product020.jpg" alt="">
+                                </p>
+                                <div class="item_info">
+                                    <p class="brand">케이튼</p>
+                                    <p class="item_name">크레어니엄 반팔 티셔츠 - 틸 타이다이</p>
+                                    <div class="price_wrap">
+                                        <p class="sale">25%</p>
+                                        <p class="total_price">43,500</p>
+                                        <p class="original_price"><del>58,000</del></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="page_btn">
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#"><img src="./images/list/arrow_btn.png" alt="다음페이지"></a>
+                </div>
+            </div>
         </div>
     </main>
     <div class="loop">
