@@ -48,10 +48,10 @@
 .header_bg header .menu_user nav .gnb li > a img {width: 100%;}
 .header_bg header .menu_user nav .gnb > li .bg {
     background-color: #fff;
-}
-.header_bg header .menu_user nav .gnb > li .bg .depth1 {
     position: absolute; top: 105px; left: 50%;
     transform: translateX(-50%);
+}
+.header_bg header .menu_user nav .gnb > li .bg .depth1 {
     display: flex;
 }
 .header_bg header .menu_user nav .gnb > li .bg .depth1 > li {}
