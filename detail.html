@@ -24,100 +24,6 @@
     <script src="./scripts/detail.js" defer></script>
 </head>
 <body>
-    <!-- top btn -->
-    <div class="top_btn"><a href="#"><img src="./images/top_btn.svg" alt="위로가기"></a></div>
-    <!-- 최상단 회원가입 쿠폰 안내 -->
-    <div class="join_event"><p>회원가입 시 10% 할인 쿠폰 지급</p></div>
-    <div class="header_bg">
-        <header>
-            <h1><a href="./index.html"><img src="./images/logo.png" alt="서플라이루트"></a></h1>
-            <div class="menu_user">
-                <nav>
-                    <ul class="gnb">
-                        <li><a href="#"><img src="./images/menu.svg" alt="카테고리"></a>
-                            <div class="bg">
-                                <ul class="depth1">
-                                    <li><a href="#">의류</a>
-                                        <ul class="depth2">
-                                            <li><a href="#">아우터</a></li>
-                                            <li><a href="#">상의</a></li>
-                                            <li><a href="#">하의</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">잡화 & ACC</a>
-                                        <ul class="depth2">
-                                            <li><a href="#">팔찌</a></li>
-                                            <li><a href="#">장갑</a></li>
-                                            <li><a href="#">모자</a></li>
-                                            <li><a href="#">지갑 / 벨트</a></li>
-                                            <li><a href="#">안경 / 선글라스</a></li>
-                                            <li><a href="#">머플러 / 숄</a></li>
-                                            <li><a href="#">기타</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">신발</a>
-                                        <ul class="depth2">
-                                            <li><a href="#">스니커즈</a></li>
-                                            <li><a href="#">구두</a></li>
-                                            <li><a href="#">워커</a></li>
-                                            <li><a href="#">샌들</a></li>
-                                            <li><a href="#">슈케어용품</a></li>
-                                            <li><a href="#">신발끈</a></li>
-                                            <li><a href="#">양말</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">가방</a>
-                                        <ul class="depth2">
-                                            <li><a href="#">백팩 / 캐리어</a></li>
-                                            <li><a href="#">힙색 / 웨이스트백</a></li>
-                                            <li><a href="#">브리프케이스</a></li>
-                                            <li><a href="#">숄더백 / 보스턴백</a></li>
-                                            <li><a href="#">크로스백</a></li>
-                                            <li><a href="#">슬링백 / 메신저백</a></li>
-                                            <li><a href="#">토트백</a></li>
-                                            <li><a href="#">파우치</a></li>
-                                            <li><a href="#">패치</a></li>
-                                            <li><a href="#">스트랩 / 키홀더 / 버클</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">시계</a>
-                                        <ul class="depth2">
-                                            <li><a href="#">쿼츠(배터리)</a></li>
-                                            <li><a href="#">오토매틱(수동)</a></li>
-                                            <li><a href="#">필드</a></li>
-                                            <li><a href="#">티타늄</a></li>
-                                            <li><a href="#">다이버</a></li>
-                                            <li><a href="#">스트랩</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">라이프</a>
-                                        <ul class="depth2">
-                                            <li><a href="#">가구 / 인테리어</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li><a href="#">BRAND</a></li>
-                        <li><a href="#">BEST</a></li>
-                        <li><a href="#">NEW</a></li>
-                        <li><a href="#">SALE</a></li>
-                        <li><a href="#">STYLIST</a></li>
-                        <li><a href="#">CURATION</a></li>
-                        <li><a href="#">매장안내</a></li>
-                    </ul>
-                </nav>
-                <div class="search_user">
-                    <div class="search_wrap">
-                        <input type="text" name="search">
-                        <button type="button" id="search_btn"><img src="./images/search.svg" alt="검색"></button>
-                    </div>
-                    <a href="#"><img src="./images/cart.svg" alt="장바구니"></a>
-                    <a href="#"><img src="./images/person.svg" alt="마이페이지"></a>
-                </div>
-            </div>
-        </header>
-    </div>
     <main>
         <!-- 왼쪽 -->
         <div class="item_detail">
@@ -132,89 +38,71 @@
                     <img src="./images/detail/item001.jpg" alt="">
                 </div>
             </div>
-            <a href="#"><img src="./images/detail/benefit.jpg" alt="서플라이루트 신규 회원 혜택 알아보기"></a>
-            <!-- detail -->
+            <a href="#" class="benefit"><img src="./images/detail/benefit.jpg" alt="서플라이루트 신규 회원 혜택 알아보기"></a>
             <div class="detail_wrap">
                 <ul class="tab">
-                    <li><a href="#">DETAIL</a></li>
+                    <li><a href="#" class="active">DETAIL</a></li>
                     <li><a href="#">REVIEW</a></li>
                     <li><a href="#">Q&A</a></li>
                     <li><a href="#">RETURN & DELIVERY</a></li>
                 </ul>
-                <p><img src="./images/detail/detail.jpg" alt=""></p>
-                <a href="#"><img src="./images/detail/more_arrow_down.png" alt=""><span>상품정보 더보기</span></a>
-            </div>
-            <!-- 리뷰 -->
-            <div class="review_wrap">
-                <ul class="tab">
-                    <li><a href="#">DETAIL</a></li>
-                    <li><a href="#">REVIEW</a></li>
-                    <li><a href="#">Q&A</a></li>
-                    <li><a href="#">RETURN & DELIVERY</a></li>
-                </ul>
-                <div class="title_write">
-                    <h2>상품리뷰<span>2</span></h2>
-                    <a href="#"><span>리뷰작성</span><img src="./images/detail/arrow_right.png" alt=""></a>
+                <!-- detail 이미지 -->
+                <div class="detail">
+                    <p><img src="./images/detail/detail.jpg" alt=""></p>
+                    <a href="#" class="more"><img src="./images/detail/more_arrow_down.png" alt=""><br><span>상품정보 더보기</span></a>
                 </div>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>제목</th>
-                            <th>작성자</th>
-                            <th>날짜</th>
-                            <th>평점</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>감각적이고 이쁩니다.</td>
-                            <td>네이버페이 구매자</td>
-                            <td>2024. 06. 18</td>
-                            <td>
-                                <img src="./images/detail/star_active.png" alt="">
-                                <img src="./images/detail/star_active.png" alt="">
-                                <img src="./images/detail/star_active.png" alt="">
-                                <img src="./images/detail/star_active.png" alt="">
-                                <img src="./images/detail/star.png" alt="">
-                            </td>
-                        <tr>
-                            <td>최고입니다! 올여름 예쁘게 잘 입고 다니겠습니다!!!</td>
-                            <td>네이버페이 구매자</td>
-                            <td>2024. 06. 25</td>
-                            <td>
-                                <img src="./images/detail/star_active.png" alt="">
-                                <img src="./images/detail/star_active.png" alt="">
-                                <img src="./images/detail/star_active.png" alt="">
-                                <img src="./images/detail/star_active.png" alt="">
-                                <img src="./images/detail/star.png" alt="">
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <a href="#">1</a>
-            </div>
-            <!-- 상품문의 -->
-            <div class="q_a">
-                <ul class="tab">
-                    <li><a href="#">DETAIL</a></li>
-                    <li><a href="#">REVIEW</a></li>
-                    <li><a href="#">Q&A</a></li>
-                    <li><a href="#">RETURN & DELIVERY</a></li>
-                </ul>
-                <div class="title_write">
-                    <h2>상품문의<span>0</span></h2>
-                    <a href="#"><span>문의작성</span><img src="./images/detail/arrow_right.png" alt=""></a>
+                <!-- 리뷰 -->
+                <div class="review">
+                    <div class="title_write">
+                        <h2>상품리뷰<span>2</span></h2>
+                        <a href="#">리뷰작성 &gt;</a>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>제목</th>
+                                <th>작성자</th>
+                                <th>날짜</th>
+                                <th>평점</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>감각적이고 이쁩니다.</td>
+                                <td>네이버페이 구매자</td>
+                                <td>2024. 06. 18</td>
+                                <td>
+                                    <img src="./images/detail/star_active.png" alt="">
+                                    <img src="./images/detail/star_active.png" alt="">
+                                    <img src="./images/detail/star_active.png" alt="">
+                                    <img src="./images/detail/star_active.png" alt="">
+                                    <img src="./images/detail/star.png" alt="">
+                                </td>
+                            <tr>
+                                <td>최고입니다! 올여름 예쁘게 잘 입고 다니겠습니다!!!</td>
+                                <td>네이버페이 구매자</td>
+                                <td>2024. 06. 25</td>
+                                <td>
+                                    <img src="./images/detail/star_active.png" alt="">
+                                    <img src="./images/detail/star_active.png" alt="">
+                                    <img src="./images/detail/star_active.png" alt="">
+                                    <img src="./images/detail/star_active.png" alt="">
+                                    <img src="./images/detail/star.png" alt="">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a href="#">1</a>
                 </div>
-                <p>등록된 상품문의가 없습니다.</p>
-            </div>
-            <!-- 환불, 배송 -->
-            <div class="return_wrap">
-                <ul class="tab">
-                    <li><a href="#">DETAIL</a></li>
-                    <li><a href="#">REVIEW</a></li>
-                    <li><a href="#">Q&A</a></li>
-                    <li><a href="#">RETURN & DELIVERY</a></li>
-                </ul>
+                <!-- 상품문의 -->
+                <div class="q_a">
+                    <div class="title_write">
+                        <h2>상품문의<span>0</span></h2>
+                        <a href="#">문의작성 &gt;</a>
+                    </div>
+                    <p>등록된 상품문의가 없습니다.</p>
+                </div>
+                <!-- 환불, 배송 -->
                 <div class="return">
                     <h2>배송/교환/반품 안내</h2>
                     <dl>
@@ -258,10 +146,10 @@
         </div>
         <!-- 오른쪽 -->
         <div class="item_info">
-            <a href="#">건지울른스 &gt;</a>
+            <a href="#" class="brand">건지울른스 &gt;</a>
             <div class="title_share">
                 <h1>피셔맨 반팔 카라 니트 - 오렌지</h1>
-                <a href="#"><img src="./images/detail/share_btn.png" alt="공유하기"></a>
+                <a href="#" class="share_btn"><img src="./images/detail/share_btn.png" alt="공유하기"></a>
             </div>
             <div class="scope_review">
                 <div class="scope">
@@ -271,7 +159,7 @@
                     <img src="./images/detail/star_active.png" alt="">
                     <img src="./images/detail/star.png" alt="">
                 </div>
-                <a href="#">2개의 리뷰 보기</a>
+                <a href="#" class="review">2개의 리뷰 보기</a>
             </div>
             <div class="price_wrap">
                 <div class="sale_original">
@@ -293,13 +181,13 @@
                     <span>= 옵션 : 가격 =</span>
                     <img src="./images/detail/arrow_down.png" alt="옵션보기">
                 </a>
-                <div class="size">
-                    <a href="#">= 옵션 : 가격 =</a>
-                    <a href="#">M</a>
-                    <a href="#">L</a>
-                    <a href="#">XL</a>
-                    <a href="#">XXL</a>
-                </div>
+                <ul class="size">
+                    <li>= 옵션 : 가격 =</li>
+                    <li>M</li>
+                    <li>L</li>
+                    <li>XL</li>
+                    <li>XXL</li>
+                </ul>
             </div>
             <div class="cart_buy_like">
                 <a href="#" class="cart">장바구니</a>
@@ -321,55 +209,5 @@
             </div>
         </div>
     </main>
-    <footer>
-        <div class="inner">
-            <div class="left">
-                <a href="#"><img src="./images/logo_w.png" alt="서플라이루트"></a>
-                <div class="sns">
-                    <a href="#"><img src="./images/facebook.png" alt="페이스북"></a>
-                    <a href="#"><img src="./images/instagram.png" alt="인스타그램"></a>
-                    <a href="#"><img src="./images/naver.png" alt="네이버"></a>
-                </div>
-                <ul class="address">
-                    <li>
-                        회사명 : 서플라이루트 주식회사 <span>|</span>
-                        대표 : 장순호 <span>|</span>
-                        이메일 : support@supplyroute.co.kr
-                    <li>
-                        주소 : 경기도 성남시 분당구 황새울로 337(서현동) 웰빙프라자 5층 501-3호<span>|</span>
-                        사업자 등록번호 : 144-81-04149
-                    </li>
-                    <li>
-                        통신판매업 신고 : 제2013-경기성남-0036 
-                        <a href="#">사업자정보확인&gt;</a><span>|</span>
-                        개인정보책임관리자 : 이영란(support@supplyroute.co.kr)
-                    </li>
-                </ul>
-                <ul class="law">
-                    <li><a href="#">회사소개</a><span>|</span></li>
-                    <li><a href="#">이용약관</a><span>|</span></li>
-                    <li><a href="#">개인정보처리방침</a></li>
-                </ul>
-                <div class="copyright">
-                    <p>COPYRIGHT&copy;2018 서플라이루트 공식스토어.  ALL RIGHTS RESERVED</p>
-                    <p>HOSTING BY 엔에이치엔커머스(주). DESIGN BY 디자인위브</p>
-                </div>
-            </div>
-            <div class="right">
-                <p class="title">고객센터</p>
-                <p class="number">070.4706.0094</p>
-                <a href="#">카카오톡 상담 : @서플라이루트</a>
-                <div class="time">
-                    <p>월-금 오전 11시 - 오후 5시</p>
-                    <p>점심시간 오후 12시 - 오후 1시</p>
-                </div>
-                <ul class="link">
-                    <li><a href="#">공지사항</a><span>|</span></li>
-                    <li><a href="#">1:1문의</a><span>|</span></li>
-                    <li><a href="#">FAQ(자주 묻는 질문)</a></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
 </body>
 </html>
