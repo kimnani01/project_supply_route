@@ -1,0 +1,6 @@
+main {
+    width: 1500px; margin: 148px auto 0; padding-top: 30px;
+    display: flex; justify-content: space-between;
+}
+/* 오른쪽 item_info */
+.item_info {width: 530px;}
