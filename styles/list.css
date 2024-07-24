@@ -1,3 +1,4 @@
+body > * {min-width: 1920px; margin: 0 auto;}
 main {margin-top: 148px;}
 /* 상단배너 */
 .visual {background: url(../images/list/banner001.jpg);
@@ -21,7 +22,9 @@ main {margin-top: 148px;}
     margin: 80px 50px 150px;
     display: flex; justify-content: space-between;
 }
-.content_wrap .snb {width: 200px;}
+.content_wrap .snb {
+    width: 200px;
+}
 .content_wrap .snb h1 {
     font-size: 1.375rem; font-weight: 700;
     padding-bottom: 15px; border-bottom: 1px solid #bbb;
@@ -38,6 +41,7 @@ main {margin-top: 148px;}
 .content_wrap .snb .menu li a {
     color: #bbb; font-size: 1.125rem;
 }
+.content_wrap .snb .menu li a:hover {color: #333;}
 /* 오른쪽 */
 /* 오른쪽 상단 md pick, lookbook */
 .content_wrap .item_wrap {width: 1570px;}
@@ -108,7 +112,7 @@ main {margin-top: 148px;}
 }
 .content_wrap .item_wrap .md_lookbook .lookbook a {display: inline-block;}
 .content_wrap .item_wrap .md_lookbook .lookbook a img {}
-/* 상품 리스트 */
+/* 개수, 옵션 */
 .content_wrap .item_wrap .list_wrap {
     border-top: 1px solid #bbb; padding-top: 30px;
     margin-top: 80px;
@@ -121,11 +125,12 @@ main {margin-top: 148px;}
 .content_wrap .item_wrap .list_wrap .option .tab {
     display: flex;
 }
-.content_wrap .item_wrap .list_wrap .option .tab li {margin-right: 23px;}
+.content_wrap .item_wrap .list_wrap .option .tab li {margin-right: 15px;}
 .content_wrap .item_wrap .list_wrap .option .tab li:last-child {margin: 0;}
 .content_wrap .item_wrap .list_wrap .option .tab li a {}
 .content_wrap .item_wrap .list_wrap .option .tab li:nth-child(2) {border-bottom: 1px solid #000;}
 .content_wrap .item_wrap .list_wrap .option .tab li:nth-child(2) a {font-weight: 600;}
+/* 상품 리스트 */
 .content_wrap .item_wrap .list_wrap .item_list {
     display: flex; flex-flow: row wrap;
     justify-content: space-between;

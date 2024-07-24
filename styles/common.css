@@ -47,27 +47,32 @@
 .header_bg header .menu_user nav .gnb li > a img {width: 100%;}
 .header_bg header .menu_user nav .gnb > li .bg {
     background-color: #fff; width: 100%; 
-    position: absolute; top: 105px; left: 0;
+    position: absolute; top: 100px; left: 0;
     display: none;
 }
 .header_bg header .menu_user nav .gnb > li .bg .depth1 {
-    max-width: 1500px; margin: 20px auto;
-    display: flex; justify-content: space-around;
+    max-width: 1500px; margin: 30px auto 80px;
+    display: flex; 
 }
 .header_bg header .menu_user nav .gnb > li .bg .depth1 > li {}
 .header_bg header .menu_user nav .gnb > li .bg .depth1 > li > a {
-    font-size: 2rem; 
+    font-size: 2rem; border-bottom: 2px solid #000;
+    width: calc(1500px / 6); display: inline-block;
+    padding-bottom: 15px;
 }
+.header_bg header .menu_user nav .gnb > li .bg .depth1 > li > a:hover {color: #00359B}
 .header_bg header .menu_user nav .gnb > li .bg .depth1 > li .depth2 {
-    margin-top: 15px;
+    margin-top: 20px;
 }
 .header_bg header .menu_user nav .gnb > li .bg .depth1 > li .depth2 li {
-    margin-bottom: 7px;
+    margin-bottom: 15px;
 }
-.header_bg header .menu_user nav .gnb > li .bg .depth1 > li .depth2 li a {
-    font-size: 0.875rem;
+.header_bg header .menu_user nav .gnb > li .bg .depth1 > li .depth2 li:last-child {margin: 0;}
+.header_bg header .menu_user nav .gnb > li .bg .depth1 > li .depth2 li a {padding: 3px 0;}
+.header_bg header .menu_user nav .gnb > li .bg .depth1 > li .depth2 li a:hover {
+    border-bottom: 1px dotted #00359B;
+    color: #00359B;
 }
-.header_bg header .menu_user nav .gnb > li .bg .depth1 > li .depth2 li a:hover {color: #00359B}
 .header_bg header .menu_user .search_user {
     display: flex;
     align-items: center;
