@@ -17,11 +17,12 @@ main {margin-top: 148px;}
     font-size: 1.25rem; font-weight: 700;
 }
 .visual .brand_info p:last-child {font-size: 1.25rem; line-height: 1.5;}
-/* 사이드 메뉴 */
+/* 배너 아래 */
 .content_wrap {
-    margin: 80px 50px 150px;
+    margin: 80px auto 150px; width: 1820px;
     display: flex; justify-content: space-between;
 }
+/* 사이드 메뉴 */
 .content_wrap .snb {
     width: 200px; height: max-content;
     position: sticky; top: 148px;
@@ -62,15 +63,17 @@ main {margin-top: 148px;}
     /* 마우스 올렸을 때 이미지 어둡게 */
     content: ''; display: inline-block;
     width: 298px; height: 401px;
-    position: absolute;
-    background: linear-gradient(transparent, #00000025);
+    position: absolute; left: 0; top: 0;
+    background: linear-gradient(transparent, #00000025); 
+    pointer-events: none;
 }
 .content_wrap .item_wrap .md_lookbook .md_pick .swiper-wrapper .swiper-slide a {
-    display: inline-block;
-    position: absolute; left: 20px; bottom: 20px;
+    display: inline-block; width: 288px; height: 401px;
     display: none;
 }
-.content_wrap .item_wrap .md_lookbook .md_pick .swiper-wrapper .swiper-slide a .item_info {}
+.content_wrap .item_wrap .md_lookbook .md_pick .swiper-wrapper .swiper-slide a .item_info {
+    position: absolute; left: 20px; bottom: 20px;
+}
 .content_wrap .item_wrap .md_lookbook .md_pick .swiper-wrapper .swiper-slide a .item_info .brand {
     font-size: 0.875rem; font-weight: 600;
 }

@@ -1,9 +1,9 @@
 /* top btn, .header_bg header,footer 공통 css */
 .top_btn {
     position: fixed; bottom: 50px; right: 50px;
-    z-index: 999;
+    z-index: 999; min-width: max-content;
 }
-.top_btn a {}
+.top_btn a {width: max-content; display: block;}
 .top_btn a img {}
 /* 회원가입 이벤트 */
 .join_event {

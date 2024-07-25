@@ -391,7 +391,7 @@ main .visual div[class^=swiper-button]{color: #fff;}
 .store h2 {line-height: 1.2;}
 .store h2 span {font-size: 2.5rem;}
 .store h2 em {
-    font-weight: 3.125rem; font-weight: 800;
+    font-size: 3.125rem; font-weight: 800;
 }
 .store .content_wrap {
     display: flex;
