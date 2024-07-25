@@ -2,7 +2,7 @@
 const small_img = document.querySelectorAll('.small_img a')
 const big_img = document.querySelector('.big_img img')
 for(let i of small_img){
-    i.addEventListener('click', (e)=>{
+    i.addEventListener('mouseover', (e)=>{
         e.preventDefault()
         console.log(i)
         big_img.src = i.children[0].src
@@ -38,11 +38,41 @@ for(let i of tab_btn){
     i.addEventListener('click',()=>{
         for(let j of tab_btn){
             j.parentElement.classList.remove('active')
+            j.parentElement.style.border = '1px solid #bbb'
+            j.parentElement.style.borderBottom = '2px solid #000'
         }
-        i.parentElement.classList.add('active')
+        i.parentElement.style.border = '2px solid #000'
+        i.parentElement.style.borderBottom = '#fff'
+        console.log(i.parentElement.previousElementSibling)
         i.parentElement.previousElementSibling.style.borderRight = '0'
     })
 }
+// 탭버튼 위치 활성화
+const tab_pst = document.querySelectorAll('.tab_pst')
+// i.getBoundingClientRect().top + 207
+window.addEventListener('scroll',()=>{
+    // 1. window scroll 인식
+    // console.log(window.pageYOffset)
+    // 2. 요소 하나 기준
+    // console.log(tab_pst[0].getBoundingClientRect().top)
+    // 3. 12 비교 if
+    tab_pst.forEach((target, index)=>{
+        if(target.getBoundingClientRect().top < 250){
+            // console.log('같다')
+            // for each
+            //tab_btn[0].parentElement.style.border = '2px solid #000'
+            //tab_btn[0].parentElement.style.borderBottom = '#fff'
+            for(let i of tab_btn){
+                i.parentElement.classList.remove('active')
+                i.parentElement.style.border = '1px solid #bbb'
+                i.parentElement.style.borderBottom = '2px solid #000'
+            }
+            tab_btn[index].parentElement.style.border = '2px solid #000'
+            tab_btn[index].parentElement.style.borderBottom = '#fff'
+        }
+    })
+})
+
 
 // 옵션버튼
 const option_btn = document.querySelector('.option a')
