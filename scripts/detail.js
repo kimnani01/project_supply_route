@@ -50,21 +50,28 @@ const tab_pst = document.querySelectorAll('.tab_pst')
 //     })
 // }
 const review = document.querySelector('.review')
+window.addEventListener('scroll',()=>{
+    console.log(review.getBoundingClientRect().top)
+    console.log(window.pageYOffset)
+})
 tab_btn.forEach((target, index)=>{
     console.log(target, index)
     target.addEventListener('click',(e)=>{
+        console.log(target)
         // e.preventDefault()
+        console.log(tab_pst[index])
+        console.log(tab_pst[index].getBoundingClientRect())
         console.log(tab_pst[index].getBoundingClientRect().top + 237)
-        scrollTo(0, review.getBoundingClientRect().top + 237)
-        for(let i of tab_btn){
-            i.parentElement.classList.remove('active')
-            i.parentElement.style.border = '1px solid #bbb'
-            i.parentElement.style.borderBottom = '2px solid #000'
-        }
-        target.parentElement.style.border = '2px solid #000'
-        target.parentElement.style.borderBottom = '#fff'
+        scrollTo(0, tab_pst[index].getBoundingClientRect().top + 237)
+        // for(let i of tab_btn){
+        //     i.parentElement.classList.remove('active')
+        //     i.parentElement.style.border = '1px solid #bbb'
+        //     i.parentElement.style.borderBottom = '2px solid #000'
+        // }
+        // target.parentElement.style.border = '2px solid #000'
+        // target.parentElement.style.borderBottom = '#fff'
         // console.log(i.parentElement.previousElementSibling)
-        // i.parentElement.previousElementSibling.style.borderRight = '0'
+        // target.parentElement.previousElementSibling.style.borderRight = '0'
     })
 })
 // 탭버튼 위치 활성화
@@ -77,7 +84,7 @@ window.addEventListener('scroll',()=>{
     // for each
     tab_pst.forEach((target, index)=>{
         // 3. 1,2 비교 if
-        if(target.getBoundingClientRect().top < 250){
+        if(target.getBoundingClientRect().top < 270){
             // console.log('같다')
             //tab_btn[0].parentElement.style.border = '2px solid #000'
             //tab_btn[0].parentElement.style.borderBottom = '#fff'

@@ -11,7 +11,6 @@ const md_pick = new Swiper ('.md_pick', {
     }
 })
 const item_info = document.querySelectorAll('.swiper-slide a')
-const after = document.querySelectorAll('.swiper-slide::after')
 const hover = document.querySelectorAll('.swiper-slide')
 for(let i of hover){
     i.addEventListener('mouseover', ()=>{
