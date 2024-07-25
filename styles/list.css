@@ -23,7 +23,8 @@ main {margin-top: 148px;}
     display: flex; justify-content: space-between;
 }
 .content_wrap .snb {
-    width: 200px;
+    width: 200px; height: max-content;
+    position: sticky; top: 148px;
 }
 .content_wrap .snb h1 {
     font-size: 1.375rem; font-weight: 700;

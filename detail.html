@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/animation.css">
     <link rel="stylesheet" href="./styles/detail.css">
-    <script src="./scripts/common.js" defer></script>
+    <!-- <script src="./scripts/common.js" defer></script> -->
     <script src="./scripts/detail.js" defer></script>
 </head>
 <body>
@@ -40,23 +40,24 @@
             </div>
             <a href="#" class="benefit"><img src="./images/detail/benefit.jpg" alt="서플라이루트 신규 회원 혜택 알아보기"></a>
             <div class="detail_wrap">
+                <!-- 탭버튼 -->
                 <ul class="tab">
-                    <li class="active"><a href="#">DETAIL</a></li>
-                    <li><a href="#">REVIEW</a></li>
-                    <li><a href="#">Q&A</a></li>
-                    <li><a href="#">RETURN & DELIVERY</a></li>
+                    <li class="active"><a href="#detail">DETAIL</a></li>
+                    <li><a href="#review">REVIEW</a></li>
+                    <li><a href="#q_a">Q&A</a></li>
+                    <li><a href="#return">RETURN & DELIVERY</a></li>
                 </ul>
                 <!-- detail 이미지 -->
-                <div class="detail">
+                <div class="detail" id="detail">
                     <p class="photo"><img src="./images/detail/detail.jpg" alt=""></p>
                     <p class="gradient"></p>
                     <a href="#" class="more"><img src="./images/detail/more_arrow_down.png" alt=""><br><span>상품정보 더보기</span></a>
                 </div>
                 <!-- 리뷰 -->
-                <div class="review">
+                <div class="review" id="review">
                     <div class="title_write">
                         <h2>상품리뷰<span>2</span></h2>
-                        <a href="#">리뷰작성 &gt;</a>
+                        <a href="#" class="write">리뷰작성 &gt;</a>
                     </div>
                     <table>
                         <thead>
@@ -79,6 +80,7 @@
                                     <img src="./images/detail/star_active.png" alt="">
                                     <img src="./images/detail/star.png" alt="">
                                 </td>
+                            </tr>
                             <tr>
                                 <td>최고입니다! 올여름 예쁘게 잘 입고 다니겠습니다!!!</td>
                                 <td>네이버페이 구매자</td>
@@ -93,18 +95,18 @@
                             </tr>
                         </tbody>
                     </table>
-                    <a href="#">1</a>
+                    <a href="#" class="page">1</a>
                 </div>
                 <!-- 상품문의 -->
-                <div class="q_a">
+                <div class="q_a" id="q_a">
                     <div class="title_write">
                         <h2>상품문의<span>0</span></h2>
-                        <a href="#">문의작성 &gt;</a>
+                        <a href="#" class="write">문의작성 &gt;</a>
                     </div>
                     <p>등록된 상품문의가 없습니다.</p>
                 </div>
                 <!-- 환불, 배송 -->
-                <div class="return">
+                <div class="return" id="return">
                     <h2>배송/교환/반품 안내</h2>
                     <dl>
                         <!-- 배송안내 -->
@@ -146,7 +148,7 @@
             </div>
         </div>
         <!-- 오른쪽 -->
-        <div class="item_info">
+        <aside class="item_info">
             <a href="#" class="brand">건지울른스 &gt;</a>
             <div class="title_share">
                 <h1>피셔맨 반팔 카라 니트 - 오렌지</h1>
@@ -160,7 +162,7 @@
                     <img src="./images/detail/star_active.png" alt="">
                     <img src="./images/detail/star.png" alt="">
                 </div>
-                <a href="#" class="review">2개의 리뷰 보기</a>
+                <a href="#review" class="review">2개의 리뷰 보기</a>
             </div>
             <div class="price_wrap">
                 <div class="sale_original">
@@ -183,7 +185,7 @@
                     <img src="./images/detail/arrow_down.png" alt="옵션보기">
                 </a>
                 <ul class="size">
-                    <li>= 옵션 : 가격 =</li>
+                    <li class="active">= 옵션 : 가격 =</li>
                     <li>M</li>
                     <li>L</li>
                     <li>XL</li>
@@ -196,11 +198,11 @@
                 <a href="#" class="like"><img src="./images/detail/heart_btn.png" alt="찜"><span>3</span></a>
             </div>
             <div class="size_guide">
-                <a href="#"><span>사이즈 가이드</span><img src="./images/detail/plus_btn.png" alt="펼치기"></a>
+                <a href="#" class="size_guide_btn"><span>사이즈 가이드</span><img src="./images/detail/plus_btn.png" alt="펼치기"></a>
                 <p><img src="./images/detail/size_guide.jpg" alt=""></p>
             </div>
             <div class="brief_wrap">
-                <a href="#"><span>간략 정보</span><img src="./images/detail/plus_btn.png" alt="펼치기"></a>
+                <a href="#" class="brief_btn"><span>간략 정보</span><img src="./images/detail/plus_btn.png" alt="펼치기"></a>
                 <div class="brief">
                     <p><span>코튼 반팔 카라 니트</span></p>
                     <p>400년 전통의 유산을 잇는 건지울른스의 감성을 현대적인 디자인과 제작 방식으로 재해석한 코튼 반팔 카라 니트입니다. 코튼 100% 소재를 사용하여 부드럽고 쾌적한 착용감을 자랑하며, 건지울른스의 역사를 담아 카라에 파도 문양과 자개단추를 사용하여 제작되었습니다. 왼쪽 소매의 바다의 거친 환경을 담아낸 닻(Anchor) 포인트는 건지 섬의 감성을 느낄 수 있는 건지울른스의 상징입니다.</p>
@@ -208,7 +210,7 @@
                     <p><span>원산지</span> : 한국</p>
                 </div>
             </div>
-        </div>
+        </aside>
     </main>
 </body>
 </html>

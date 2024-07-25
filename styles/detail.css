@@ -21,43 +21,48 @@ main {
     margin: 80px 0; display: block;
 }
 .item_detail .detail_wrap {}
+/* 탭버튼 */
 .item_detail .detail_wrap .tab {
-    display: flex;
-}
-.item_detail .detail_wrap .tab .active {
-    border: 2px solid #000;
-}
-.item_detail .detail_wrap .tab .active::after {
-    content: ''; display: block;
-    width: 100%; height: 2px;
-    background-color: #fff;
-    position: absolute; left: 0; bottom: -2px; z-index: 500;
+    display: flex; 
+    position: sticky; top:148px; z-index: 990;
 }
 .item_detail .detail_wrap .tab li {
     width: calc(100% / 4); height: 59px;
-    position: relative; left: 0; top: 0;
+    position: relative; left: 0; top: 0; z-index: 900;
     border-bottom: 2px solid #000;
     border-top: 1px solid #bbb;
     border-right: 1px solid #bbb;
+    background: #fff;
+}
+.item_detail .detail_wrap .tab li:first-child {border-left: 1px solid #bbb;}
+.item_detail .detail_wrap .tab li.active {
+    border: 2px solid #000;
+}
+.item_detail .detail_wrap .tab li.active::after {
+    content: ''; display: block;
+    width: 100%; height: 2px;
+    background-color: #fff;
+    position: absolute; left: 0; bottom: -2px; z-index: 900;
 }
 .item_detail .detail_wrap .tab li a {
     line-height: 59px; width: 100%;
     display: block; text-align: center;
 }
-.item_detail .detail_wrap .tab li .active {
-    border: 2px solid #000; width: calc(100% / 4);
-    border-bottom:#fff;
-    position: absolute; left: 0; top: 0; z-index: 900;
-}
+/* 상세이미지 */
 .item_detail .detail_wrap .detail {
     margin-top: 30px; text-align: center;
+    position: relative; left: 0; top: 0; z-index: 900;
 }
 .item_detail .detail_wrap .detail .photo {
     display: inline-block;
     height: 3000px; overflow: hidden;
 }
 .item_detail .detail_wrap .detail .photo img {}
-.item_detail .detail_wrap .detail .gradient {}
+.item_detail .detail_wrap .detail .gradient {
+    background: linear-gradient(0deg, #00000099, transparent);
+    width: 100%; height: 500px;
+    position: absolute; left: 0; bottom: 66px;
+}
 .item_detail .detail_wrap .detail .more {
     border-top: 1px solid #000;
     display: block; line-height: 1.25;
@@ -65,5 +70,203 @@ main {
 }
 .item_detail .detail_wrap .detail .more img {display: inline-block;}
 .item_detail .detail_wrap .detail .more span {margin-top: 5px;}
+/* 리뷰, 문의 공통 */
+.title_write {
+    display: flex; justify-content: space-between;
+    align-items: end;
+}
+.title_write h2 {
+    font-size: 1.25rem; font-weight: 500; 
+}
+.title_write h2 span {color: #00359b;}
+/* 리뷰 */
+.item_detail .detail_wrap .review {margin-top: 50px;}
+.item_detail .detail_wrap .review .title_write {}
+.item_detail .detail_wrap .review .title_write h2 {}
+.item_detail .detail_wrap .review .title_write h2 span {color: #00359b;}
+.item_detail .detail_wrap .review .title_write .write {}
+.item_detail .detail_wrap .review table {
+    width: 100%; margin: 15px 0;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+.item_detail .detail_wrap .review table tr {
+    height: 50px; border-bottom: 1px solid #bbb;
+}
+.item_detail .detail_wrap .review table thead {}
+.item_detail .detail_wrap .review table thead tr {}
+.item_detail .detail_wrap .review table thead tr th {
+    width: 150px;
+    text-align: center; width: 150px;
+}
+.item_detail .detail_wrap .review table thead tr th:first-child {
+    width: calc(100% - 450px) ;
+}
+.item_detail .detail_wrap .review table tbody {}
+.item_detail .detail_wrap .review table tbody tr {}
+.item_detail .detail_wrap .review table tbody tr:last-child {border: 0;}
+.item_detail .detail_wrap .review table tbody tr td {
+    text-align: center;
+}
+.item_detail .detail_wrap .review table tbody tr td:first-child {text-align: start;}
+.item_detail .detail_wrap .review table tbody tr td img {display: inline-block;}
+.item_detail .detail_wrap .review .page {
+    text-align: center; display: block;
+}
+/* 상품문의 */
+.item_detail .detail_wrap .q_a {margin-top: 50px;}
+.item_detail .detail_wrap .q_a .title_write {}
+.item_detail .detail_wrap .q_a .title_write h2 {}
+.item_detail .detail_wrap .q_a .title_write h2 span {}
+.item_detail .detail_wrap .q_a .title_write .write {}
+.item_detail .detail_wrap .q_a p {
+    color: #ccc; text-align: center;
+    margin: 15px 0;
+    padding: 50px; border-top: 1px solid #000;
+}
+/* 환불 배송 */
+.item_detail .detail_wrap .return {}
+.item_detail .detail_wrap .return h2 {
+    font-size: 1.25rem; font-weight: 500;
+    padding-bottom: 15px; border-bottom: 1px solid #000;
+}
+.item_detail .detail_wrap .return dl {
+    font-size: 0.813rem; padding-top: 15px;
+}
+.item_detail .detail_wrap .return dl dt {
+    color: #00359b; font-weight: 500;
+    margin: 25px 0 5px;
+}
+.item_detail .detail_wrap .return dl dt:first-child {margin: 0 0 5px;}
+.item_detail .detail_wrap .return dl dd {margin-bottom: 5px;}
 /* 오른쪽 item_info */
-.item_info {width: 530px;}
+.item_info {
+    width: 530px; position: sticky; top: 148px;
+    height: max-content;
+}
+.item_info .brand {}
+.item_info .title_share {
+    display: flex; justify-content: space-between;
+    margin: 20px 0 15px;
+}
+.item_info .title_share h1 {font-size: 1.875rem; font-weight: 600;}
+.item_info .title_share .share_btn {}
+.item_info .title_share .share_btn img {}
+.item_info .scope_review {display: flex; column-gap: 10px;}
+.item_info .scope_review .scope {display: flex;}
+.item_info .scope_review .scope img {}
+.item_info .scope_review .review {
+    border-bottom: 1px solid #000;
+}
+.item_info .price_wrap {
+    margin: 30px 0;
+}
+.item_info .price_wrap .sale_original {
+    display: flex; column-gap: 5px;
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.item_info .price_wrap .sale_original .sale {color: #f00;}
+.item_info .price_wrap .sale_original .original_price {}
+.item_info .price_wrap .sale_original .original_price del {color: #ccc;}
+.item_info .price_wrap .total_price {
+    font-size: 1.75rem; font-weight: 600;
+}
+.item_info dl {
+    padding: 30px 0;
+    border-top: 1px solid #d4d4d4;
+}
+.item_info dl dt {
+    width: 106px;
+    float: left; font-size: 0.875rem;
+}
+.item_info dl dd {
+    margin-bottom: 12px; width: calc(100% - 106px);
+    float: left;
+}
+.item_info dl::after {
+    content: ''; display: block; 
+    clear: both;/* 이후 형제가 float 영향 안받게, dl 높이 값 인식 */
+}
+.item_info dl dd a {border-bottom: 1px solid #000;}
+.item_info .option {
+    position: relative; top: 0; left: 0;
+}
+.item_info .option a {
+    display: flex; justify-content: space-between;
+    align-items: center;
+    border: 1px solid #d4d4d4;
+    height: 44px; padding: 10px 15px;
+}
+.item_info .option a span {}
+.item_info .option a img {}
+.item_info .option .size {
+    border: 1px solid #d4d4d4;
+    border-top: 0;
+    background: #fff; width: 100%;
+    position: absolute; left: 0; top: 43px;
+    display: none;
+}
+.item_info .option .size li {
+    padding: 10px 15px;
+    color: #333;
+}
+.item_info .option .size .active {background-color: #f0f0f0;}
+.item_info .cart_buy_like {
+    margin: 30px 0;
+    display: flex; gap: 15px;
+    text-align: center;
+}
+.item_info .cart_buy_like .cart {
+    background: #fff;
+    border: 1px solid #000;
+    line-height: 48px;
+    width: 225px;
+}
+.item_info .cart_buy_like .buy {
+    background: #000;
+    color: #fff;
+    line-height: 48px;
+    width: 225px;
+}
+.item_info .cart_buy_like .like {
+    border: 1px solid #d9d9d9;
+    width: 50px;
+    display: flex; flex-flow: column nowrap;
+    align-items: center; justify-content: center;
+}
+.item_info .cart_buy_like .like img {width: 28px;}
+.item_info .cart_buy_like .like img span {
+    color: #777; font-size: 0.75rem;
+}
+.item_info .size_guide {
+    margin-bottom: 15px;
+}
+.item_info .size_guide .size_guide_btn {
+    display: flex; justify-content: space-between;
+    border-bottom: 1px solid #d4d4d4;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+.item_info .size_guide .size_guide_btn span {font-weight: 500;}
+.item_info .size_guide .size_guide_btn img {}
+.item_info .size_guide p {display: none;}
+.item_info .size_guide p img {}
+.item_info .brief_wrap {
+    padding-bottom: 15px;
+}
+.item_info .brief_wrap .brief_btn {
+    display: flex; justify-content: space-between;
+    border-bottom: 1px solid #d4d4d4;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+.item_info .brief_wrap .brief_btn span {}
+.item_info .brief_wrap .brief_btn img {}
+.item_info .brief_wrap .brief {display: none;}
+.item_info .brief_wrap .brief p {
+    margin-bottom: 20px; font-size: 0.813rem;
+}
+.item_info .brief_wrap .brief p:nth-child(2) {line-height: 1.6;}
+.item_info .brief_wrap .brief p span {font-weight: 500;}
