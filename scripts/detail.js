@@ -33,49 +33,40 @@ more_btn.addEventListener('click',(e)=>{
 })
 
 // 탭버튼 클릭 활성화
-const tab_btn = document.querySelectorAll('.tab li a')
+const tab_btn = document.querySelectorAll('.tab li')
 const tab_pst = document.querySelectorAll('.tab_pst')
-// for(let i of tab_btn){
-//     i.addEventListener('click',()=>{
-//         window.scrollTo(0, i.getBoundingClientRect().top + 207)
-//         for(let j of tab_btn){
-//             j.parentElement.classList.remove('active')
-//             j.parentElement.style.border = '1px solid #bbb'
-//             j.parentElement.style.borderBottom = '2px solid #000'
-//         }
-//         i.parentElement.style.border = '2px solid #000'
-//         i.parentElement.style.borderBottom = '#fff'
-//         // console.log(i.parentElement.previousElementSibling)
-//         // i.parentElement.previousElementSibling.style.borderRight = '0'
-//     })
-// }
 const review = document.querySelector('.review')
-window.addEventListener('scroll',()=>{
-    console.log(review.getBoundingClientRect().top)
-    console.log(window.pageYOffset)
-})
+// window.addEventListener('scroll',()=>{
+//     console.log(review.getBoundingClientRect().top)
+//     console.log(window.pageYOffset)
+// })
 tab_btn.forEach((target, index)=>{
-    console.log(target, index)
-    target.addEventListener('click',(e)=>{
-        console.log(target)
+    target.addEventListener('click',()=>{
+        console.log(target, index)
+        tab_title_fun_reset();
+        tab_title_fun_active(target);
         // e.preventDefault()
-        console.log(tab_pst[index])
-        console.log(tab_pst[index].getBoundingClientRect())
-        console.log(tab_pst[index].getBoundingClientRect().top + 237)
-        scrollTo(0, tab_pst[index].getBoundingClientRect().top + 237)
-        // for(let i of tab_btn){
-        //     i.parentElement.classList.remove('active')
-        //     i.parentElement.style.border = '1px solid #bbb'
-        //     i.parentElement.style.borderBottom = '2px solid #000'
-        // }
-        // target.parentElement.style.border = '2px solid #000'
-        // target.parentElement.style.borderBottom = '#fff'
-        // console.log(i.parentElement.previousElementSibling)
-        // target.parentElement.previousElementSibling.style.borderRight = '0'
+        /* console.log(tab_pst[index])
+        console.log(tab_pst[index].getBoundingClientRect().top + 237)*/
+        // console.log(tab_pst[index].getBoundingClientRect().top)
+        // scrollTo(0, tab_pst[index].getBoundingClientRect().top + 500) 
     })
 })
-// 탭버튼 위치 활성화
-// i.getBoundingClientRect().top + 148+59+30=237
+// 공통 함수 탭 타이블 초기화 
+function tab_title_fun_reset(){
+    for(let i of tab_btn){
+        i.classList.remove('active')
+        i.style.border = '1px solid #bbb'
+        i.style.borderBottom = '2px solid #000'
+    }
+}
+// 공통 함수 탭 활성화
+function tab_title_fun_active(a){
+    a.style.border = '2px solid #000'
+    a.style.borderBottom = '#fff'
+}
+
+// 스크롤 시 해당 위치 탭버튼 활성화
 window.addEventListener('scroll',()=>{
     // 1. window scroll 인식
     // console.log(window.pageYOffset)
@@ -84,21 +75,12 @@ window.addEventListener('scroll',()=>{
     // for each
     tab_pst.forEach((target, index)=>{
         // 3. 1,2 비교 if
-        if(target.getBoundingClientRect().top < 270){
-            // console.log('같다')
-            //tab_btn[0].parentElement.style.border = '2px solid #000'
-            //tab_btn[0].parentElement.style.borderBottom = '#fff'
-            for(let i of tab_btn){
-                i.parentElement.classList.remove('active')
-                i.parentElement.style.border = '1px solid #bbb'
-                i.parentElement.style.borderBottom = '2px solid #000'
-            }
-            tab_btn[index].parentElement.style.border = '2px solid #000'
-            tab_btn[index].parentElement.style.borderBottom = '#fff'
+        if(target.getBoundingClientRect().top < 250){
+            tab_title_fun_reset();
+            tab_title_fun_active(tab_btn[index]);
         }
     })
 })
-
 
 // 옵션버튼
 const option_btn = document.querySelector('.option a')
