@@ -32,5 +32,5 @@ https://supplyroute.netlify.app/
 - 상품리스트 html, css, js
 - 헤더 카테고리 메뉴 클릭시 나오는 서브 메뉴 html, css, js
 ### 0725
-- 상세페이지 html,css, js
+- 상세페이지 html, css, js
 - 상품리스트 after로 인한 a 클릭 비활성화 문제 해결
